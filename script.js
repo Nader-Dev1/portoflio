@@ -8,19 +8,6 @@
     });
   }
 
-  // Activity toast — light social-proof hook, appears once after a delay
-  var activityToast = document.getElementById('activityToast');
-  var activityClose = document.getElementById('activityClose');
-  if(activityToast && activityClose){
-    var toastTimer = setTimeout(function(){ activityToast.classList.add('show'); }, 4000);
-    var hideTimer = setTimeout(function(){ activityToast.classList.remove('show'); }, 14000);
-    activityClose.addEventListener('click', function(){
-      activityToast.classList.remove('show');
-      clearTimeout(toastTimer);
-      clearTimeout(hideTimer);
-    });
-  }
-
   var currentLang = 'ar';
   var langToggle = document.getElementById('langToggle');
   var elsWithText = document.querySelectorAll('[data-ar][data-en]');
@@ -46,6 +33,11 @@
     elsWithText.forEach(function(el){
       el.textContent = el.getAttribute('data-' + lang);
     });
+    document.querySelectorAll('.gallery-item[data-category]').forEach(function(photo){
+      var title = photo.getAttribute('data-title-' + lang);
+      photo.setAttribute('aria-label', title);
+      photo.querySelector('img').alt = title;
+    });
 
     langToggle.querySelectorAll('.lang-opt').forEach(function(opt){
       opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
@@ -55,6 +47,33 @@
   langToggle.addEventListener('click', function(){
     applyLang(currentLang === 'ar' ? 'en' : 'ar');
   });
+
+  // Filter project photographs and open the original image in an accessible dialog.
+  var filters = document.querySelectorAll('.gallery-filter');
+  var photos = document.querySelectorAll('.gallery-item[data-category]');
+  var lightbox = document.getElementById('galleryLightbox');
+  filters.forEach(function(filter){
+    filter.addEventListener('click', function(){
+      var category = filter.dataset.filter;
+      filters.forEach(function(button){
+        var selected = button === filter;
+        button.classList.toggle('active', selected);
+        button.setAttribute('aria-pressed', String(selected));
+      });
+      photos.forEach(function(photo){ photo.hidden = category !== 'all' && photo.dataset.category !== category; });
+    });
+  });
+  photos.forEach(function(photo){
+    photo.addEventListener('click', function(){
+      lightbox.querySelector('img').src = photo.dataset.image;
+      lightbox.querySelector('img').alt = photo.getAttribute('data-title-' + currentLang);
+      lightbox.querySelector('p').textContent = photo.getAttribute('data-title-' + currentLang);
+      lightbox.showModal();
+    });
+  });
+  lightbox.querySelector('.lightbox-close').addEventListener('click', function(){ lightbox.close(); });
+  lightbox.addEventListener('click', function(event){ if(event.target === lightbox) lightbox.close(); });
+  lightbox.addEventListener('close', function(){ lightbox.querySelector('img').removeAttribute('src'); });
 
   // Count-up hero stats
   var counters = document.querySelectorAll('.meta-num');
@@ -118,6 +137,6 @@
       : ['Free consultation request', 'Name: ' + name, 'Phone: ' + phone, 'Service: ' + service, 'Details: ' + (details || '—')];
 
     var message = encodeURIComponent(lines.join('\n'));
-    window.open('https://wa.me/966501028675?text=' + message, '_blank');
+    window.open('https://wa.me/966568063384?text=' + message, '_blank', 'noopener');
   });
 })();
