@@ -125,3 +125,25 @@ dialog { background: #142e3a; color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   .tech-list .tech-brand { animation: none; }
 }
+
+/* Two documented project summaries, with clearly marked illustrative art. */
+.case-studies { background: #0d222e; }
+.case-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.case-card { overflow: hidden; border: 1px solid var(--line); background: #152e3a; border-radius: 15px; transition: transform .28s, border-color .28s, box-shadow .28s; }
+.case-card:hover { transform: translateY(-5px); border-color: #6e9ba1; box-shadow: 0 18px 42px #04131d80; }
+.case-photo { position: relative; height: 290px; background: #1b3a47; overflow: hidden; }
+.case-photo img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.case-card:hover .case-photo img { transform: scale(1.035); }
+.case-photo span { position: absolute; bottom: 15px; inset-inline-start: 15px; padding: 6px 10px; border: 1px solid #ffffff44; border-radius: 5px; background: #081b26dd; color: #f3f7f7; font-size: 11px; }
+.case-body { padding: 28px 30px 32px; }
+.case-kicker { display: block; direction: ltr; text-align: start; color: #9ac2c4; font: 700 12px var(--mono); letter-spacing: .07em; }
+.case-title-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: 14px 0 8px; }
+.case-title-row h3 { font-size: clamp(20px, 2vw, 27px); line-height: 1.4; margin: 0; }
+.case-title-row strong { color: #a7c9ca; font: 800 42px Manrope, Arial, sans-serif; }
+.case-body p { color: var(--muted); font-size: 14px; line-height: 1.95; margin: 0; }
+.gallery-item img[src$="outdoor-camera.webp"],
+.gallery-item img[src$="cctv-villa-gate.jpg"],
+.gallery-item img[src$="rack-ceiling-mount.jpg"] { object-position: center 23%; }
+.gallery-item img[src$="security-system-point.webp"] { object-position: center 31%; }
+@media (max-width: 820px) { .case-grid { grid-template-columns: 1fr; } }
+@media (max-width: 550px) { .case-photo { height: 230px; } .case-body { padding: 22px; } }
