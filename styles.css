@@ -44,6 +44,8 @@ html { scroll-padding-top: 92px; }
   --mist: #eaf1f5;
 }
 .hero { background: linear-gradient(112deg, #fff 34%, #e6f0f2 100%); }
+.reveal { opacity: 1; transform: none; }
+.reveal.in { animation: hero-enter .45s ease both; }
 .hero-visual { background: #193e50; }
 .hero-visual > img { object-position: center 43%; }
 .visual-label { font-size: 11px; }
