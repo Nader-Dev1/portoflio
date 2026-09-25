@@ -92,3 +92,89 @@ html { scroll-padding-top: 92px; }
   .tech-brand { min-height: 76px; }
   .tech-brand img { height: 27px; }
 }
+
+/* Portrait and technical service pictograms. */
+.hero-visual { background: #1d4038; }
+.hero-visual > img { object-position: center 35%; }
+.service-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  color: #235b4c; background: #e8f1ec;
+}
+.service-icon svg { display: block; width: 25px; height: 25px; }
+.service-card:nth-child(3n+2) .service-icon { background: #f6ebe2; color: #9a592f; }
+.service-card:nth-child(3n+3) .service-icon { background: #e9eff3; color: #45677c; }
+.service-card:nth-child(3n+2):hover { border-color: #d1a17a; }
+.service-card:nth-child(3n+3):hover { border-color: #8da9ba; }
+
+/* An editorial, varied grid for the eight areas of expertise. */
+.capabilities {
+  color: #f4f8f4;
+  background:
+    radial-gradient(ellipse at 8% 8%, #2b574a 0, transparent 38%),
+    linear-gradient(140deg, #173b33 0%, #0f2d29 100%);
+  border: 0;
+}
+.capabilities .eyebrow { color: #e7ba7c; }
+.capabilities .section-heading > p { color: #c1d4ca; }
+.capability-grid {
+  counter-reset: expertise;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 15px;
+}
+.capability-card {
+  counter-increment: expertise;
+  grid-column: span 4;
+  position: relative;
+  min-height: 214px;
+  padding: 25px 27px;
+  overflow: hidden;
+  color: #f8faf7;
+  background: linear-gradient(145deg, #2c5145 0%, #1b3d36 100%);
+  border: 1px solid #5b7d6c;
+  border-radius: 17px;
+  box-shadow: 0 14px 34px #071f1b26;
+  transition: transform .27s ease, border-color .27s ease, box-shadow .27s ease;
+}
+.capability-card::before {
+  content: "0" counter(expertise);
+  display: inline-block;
+  padding: 4px 11px;
+  color: #f1c58f;
+  background: #102e28;
+  border: 1px solid #4e715f;
+  border-radius: 6px;
+  font: 700 12px/1.4 var(--mono);
+}
+.capability-card::after {
+  content: "";
+  position: absolute;
+  left: -60px; bottom: -110px;
+  width: 230px; height: 230px;
+  border: 1px solid #bdd7b82b;
+  border-radius: 50%;
+  box-shadow: 0 0 0 36px #bdd7b809, 0 0 0 72px #bdd7b807;
+  pointer-events: none;
+}
+.capability-card:nth-child(1) { grid-column: span 5; }
+.capability-card:nth-child(2) { grid-column: span 4; }
+.capability-card:nth-child(3) { grid-column: span 3; }
+.capability-card:nth-child(7), .capability-card:nth-child(8) { grid-column: span 6; }
+.capability-card:nth-child(3n+2) { background: linear-gradient(145deg, #334c41, #25382f); border-color: #887c62; }
+.capability-card:nth-child(3n+2)::before { color: #f5d2a9; border-color: #877454; }
+.capability-card:hover { transform: translateY(-5px); border-color: #dab482; box-shadow: 0 20px 42px #071f1b55; }
+.capability-card h3 { position: relative; z-index: 1; font-size: 21px; margin: 21px 0 10px; line-height: 1.45; }
+.capability-tech { position: relative; z-index: 1; color: #cadbd1; font: 500 13px/1.8 var(--mono); text-align: start; }
+.proof { background: #f3f2ed; color: var(--ink); }
+.proof .eyebrow { color: #975d39; }
+.proof p { color: #53646b; }
+.proof-points span { background: #fff; color: #31434a; border-color: #dadfdc; }
+.proof .text-link { color: #385d57; }
+.automation { background: #392d32; }
+@media (max-width: 1050px) {
+  .capability-card, .capability-card:nth-child(n) { grid-column: span 6; }
+}
+@media (max-width: 550px) {
+  .capability-grid { grid-template-columns: 1fr; }
+  .capability-card, .capability-card:nth-child(n) { grid-column: 1; min-height: 190px; }
+}
