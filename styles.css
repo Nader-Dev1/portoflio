@@ -261,3 +261,19 @@ dialog::backdrop { background: #080a0bdc; }
   .infra-scope ol { grid-template-columns: 1fr 1fr; gap: 8px; }
   .infra-scope li { min-height: 99px; font-size: 13px; }
 }
+
+/* Cool slate layers give the long page a rhythm beyond black, white and gold. */
+.infra-scope { background: #e9f0f1; }
+.infra-scope li { background: #fff; border-color: #d3e0e2; }
+.capabilities, .case-studies { background: #15313b; }
+.capabilities .section-heading h2, .case-studies .section-heading h2 { color: #f7f8f7; }
+.capabilities .section-heading > p, .case-studies .section-heading > p { color: #d0e0e2; }
+.capabilities .eyebrow, .case-studies .eyebrow { color: #f1bb42; }
+.capability-card { background: #f9fbfa; border-color: #b9ccd0; }
+.case-card { background: #fdfdfb; border-color: #9bb0b7; }
+.tech-list .brand-fortinet, .tech-list .brand-grandstream, .tech-list .brand-zkteco { background: #fff; color: #202729; border-color: #d6d9d6; }
+.tech-list .brand-fortinet:hover, .tech-list .brand-grandstream:hover, .tech-list .brand-zkteco:hover { background: #f6faf9; border-color: #e8ad23; }
+.brand-fortinet img { filter: invert(31%) sepia(89%) saturate(3106%) hue-rotate(342deg) brightness(94%) contrast(102%); }
+.tech-list .brand-grandstream img { width: min(145px,95%); height: 63px; object-fit: contain; filter: none; opacity: 1; }
+.tech-list .brand-zkteco img { width: min(112px,95%); height: 45px; object-fit: contain; filter: none; opacity: 1; }
+.tech-list .brand-zkteco { min-width: 0; }
