@@ -34,7 +34,7 @@
 
 /* Keep the published layout, with a more compact desktop canvas. */
 @media (min-width: 821px) {
-  body { zoom: .8; }
+  body { zoom: .9; }
 }
 html { scroll-padding-top: 92px; }
 :root {
