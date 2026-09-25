@@ -1,896 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>نادر السيد | مهندس شبكات وحلول تقنية — الرياض</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="نادر السيد: الشبكات والبنية التحتية والداتا سنتر، إدارة السيرفرات والافتراضية والنسخ الاحتياطي، Grandstream والبرمجيات والأتمتة والأنظمة المدمجة في السعودية.">
+<title>نادر السيد | هندسة الشبكات وحلول تقنية للشركات</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&family=Tajawal:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="grain"></div>
-
-<div class="announce" id="announceBar">
-  <div class="announce-inner">
-    <span class="announce-dot" aria-hidden="true"></span>
-    <span data-ar="متاح حالياً لعدد محدود من المشاريع الجديدة هذا الشهر — " data-en="Limited new-project slots open this month — ">متاح حالياً لعدد محدود من المشاريع الجديدة هذا الشهر — </span>
-    <strong data-ar="احجز استشارتك المجانية الآن" data-en="book your free consultation now">احجز استشارتك المجانية الآن</strong>
-  </div>
-  <button class="announce-close" id="announceClose" aria-label="Close">×</button>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="#home" aria-label="Nader Elsayed"><span class="brand-mark">NS</span><span><strong data-ar="نادر السيد" data-en="Nader Elsayed">نادر السيد</strong><small data-ar="هندسة الشبكات والحلول التقنية" data-en="NETWORK ENGINEERING &amp; TECHNOLOGY">هندسة الشبكات والحلول التقنية</small></span></a><nav class="nav-links" id="primaryNav" aria-label="Main navigation"><a href="#services" data-ar="الحلول" data-en="Solutions">الحلول</a><a data-ar="الخبرات" data-en="Capabilities" href="#capabilities">الخبرات</a><a href="#work" data-ar="الأعمال" data-en="Work">الأعمال</a><a href="#automation" data-ar="الأتمتة" data-en="Automation">الأتمتة</a><a href="#gallery" data-ar="المعرض" data-en="Gallery">المعرض</a><a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a></nav><div class="nav-actions">
+<button id="langToggle" class="lang-button" type="button" aria-label="Switch language">EN</button><a class="button button-primary nav-cta" href="#contact" data-ar="ناقش مشروعك" data-en="Discuss a project">ناقش مشروعك</a><button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Menu">☰</button>
 </div>
-
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="#" class="logo">
-      <span class="logo-mark">N<span class="logo-dot">•</span>E</span>
-      <span class="logo-text"><strong data-ar="نادر السيد" data-en="Nader Elsayed">نادر السيد</strong><small data-ar="مهندس شبكات" data-en="Network Engineer">مهندس شبكات</small></span>
-    </a>
-    <div class="nav-links">
-      <a href="#featured" data-ar="أعمال بارزة" data-en="Featured">أعمال بارزة</a>
-      <a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a>
-      <a href="#brands" data-ar="البراندات" data-en="Brands">البراندات</a>
-      <a href="#gallery" data-ar="ألبوم الأعمال" data-en="Gallery">ألبوم الأعمال</a>
-      <a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a>
-      <a href="#journey" data-ar="المسيرة" data-en="Journey">المسيرة</a>
-    </div>
-    <div class="nav-actions">
-      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-        <span class="lang-opt active" data-lang="ar">AR</span>
-        <span class="lang-sep">/</span>
-        <span class="lang-opt" data-lang="en">EN</span>
-      </button>
-      <a href="#book" class="btn btn-primary btn-nav" data-ar="احجز استشارة" data-en="Book a call">احجز استشارة</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      </button>
-    </div>
-  </div>
-  <div class="nav-mobile" id="navMobile">
-    <a href="#featured" data-ar="أعمال بارزة" data-en="Featured">أعمال بارزة</a>
-    <a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a>
-    <a href="#brands" data-ar="البراندات" data-en="Brands">البراندات</a>
-    <a href="#gallery" data-ar="ألبوم الأعمال" data-en="Gallery">ألبوم الأعمال</a>
-    <a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a>
-    <a href="#journey" data-ar="المسيرة" data-en="Journey">المسيرة</a>
-  </div>
-  <div class="port-strip top section-inner" aria-hidden="true">
-    <span class="port lit"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port lit"></span><span class="port"></span><span class="port"></span><span class="port lit"></span>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hero-inner">
-    <div class="hero-copy reveal">
-      <p class="eyebrow" data-ar="نادر السيد · مهندس شبكات · الرياض" data-en="Nader Elsayed · Network Engineer · Riyadh">نادر السيد · مهندس شبكات · الرياض</p>
-      <h1 class="hero-title"><span data-ar="شبكات مستقرة. أنظمة مترابطة." data-en="Reliable networks. Connected systems.">شبكات مستقرة. أنظمة مترابطة.</span><span class="hero-title-accent" data-ar="تشغيل أكثر كفاءة." data-en="Smarter operations.">تشغيل أكثر كفاءة.</span></h1>
-      <p class="hero-hook" data-ar="تهيئة Fortinet وCisco وربط الفروع وحل مشكلات الشبكات — من سطر الأوامر إلى التشغيل الفعلي." data-en="Fortinet and Cisco configuration, branch connectivity and network troubleshooting — from the command line to live operation.">تهيئة Fortinet وCisco وربط الفروع وحل مشكلات الشبكات — من سطر الأوامر إلى التشغيل الفعلي.</p>
-      <p class="hero-sub" data-ar="أصمم وأنفذ الشبكات ومراكز البيانات وأنظمة التيار المنخفض، وأطوّر حلول SaaS حسب احتياج المشروع، مع فريق فني للتمديد والتركيب والتسليم في السعودية." data-en="I design and implement networks, data centers and low-current systems, and build SaaS solutions around each project's needs, supported by a field installation team in Saudi Arabia.">أصمم وأنفذ الشبكات ومراكز البيانات وأنظمة التيار المنخفض، وأطوّر حلول SaaS حسب احتياج المشروع، مع فريق فني للتمديد والتركيب والتسليم في السعودية.</p>
-      <div class="hero-actions"><a href="#book" class="btn btn-primary" data-ar="ناقش مشروعك" data-en="Discuss your project">ناقش مشروعك</a><a href="#featured" class="btn btn-ghost" data-ar="شاهد الأعمال" data-en="View projects">شاهد الأعمال</a></div>
-      <div class="hero-specialties" aria-label="Specialties"><span>Fortinet</span><span>Cisco</span><span>VPN / Routing</span><span>ELV</span><span>Data Center</span><span>SaaS</span></div>
-    </div>
-    <div class="hero-graphic reveal">
-      <img class="hero-photo" src="images/rack-front-complete.jpg" alt="تجهيز راك شبكات من مشروع منفذ" fetchpriority="high">
-      <div class="terminal" dir="ltr" aria-label="Command line visual example">
-        <div class="terminal-tabs"><span>● &nbsp; CLI / NETWORK</span><span>▁ ▢ ×</span></div>
-        <div class="terminal-code"><span class="prompt">network@project:~$</span> show interfaces<br>port1 &nbsp;&nbsp; up &nbsp; · &nbsp; LAN<br>port2 &nbsp;&nbsp; up &nbsp; · &nbsp; WAN<br><span class="prompt">network@project:~$</span> show vpn status<br>branch-tunnel &nbsp; <span class="ok">connected</span><span class="cursor">▌</span></div>
-      </div>
-      <div class="hero-photo-caption" data-ar="من أعمال تنفيذ الشبكات والبنية التحتية" data-en="From network infrastructure projects">من أعمال تنفيذ الشبكات والبنية التحتية</div>
-    </div>
-  </div>
-</header>
-<div class="focus-strip section-inner"><span data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</span><span data-ar="Fortinet و Cisco" data-en="Fortinet & Cisco">Fortinet و Cisco</span><span data-ar="التيار المنخفض" data-en="Low current systems">التيار المنخفض</span><span data-ar="مراكز البيانات" data-en="Data centers">مراكز البيانات</span><span data-ar="البرمجيات و SaaS" data-en="Software & SaaS">البرمجيات و SaaS</span></div>
-
-<section class="section featured" id="featured">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="أعمال بارزة" data-en="Featured work">أعمال بارزة</p>
-    <h2 class="section-title" data-ar="مشروعين لخّصوا خبرتي الميدانية" data-en="Two projects that define my field experience">مشروعين لخّصوا خبرتي الميدانية</h2>
-
-    <div class="featured-grid">
-      <article class="featured-card reveal">
-        <div class="featured-media"><img src="images/rack-corning-wifi.jpg" alt="Al-Diriyah firewall cabinet with FortiGate" loading="lazy"></div>
-        <div class="featured-body">
-        <span class="featured-tag" data-ar="مشروع الدرعية — New Nova" data-en="Al-Diriyah Project — New Nova">مشروع الدرعية — New Nova</span>
-        <h3 data-ar="تنفيذ بنية شبكية في مشروع الدرعية" data-en="Network infrastructure at Al-Diriyah">تنفيذ بنية شبكية في مشروع الدرعية</h3>
-        <p data-ar="قيادة  ١٦٠ وحدة شبكية (Fortinet, Unifi, FortiSwitch) في مشروع الدرعية، مع إشراف مباشر على فريق من ١٠ أفراد، بالتوازي مع تطوير موقع SaaS مخصص بتوثيق كامل لتسليم واضح." data-en="Led a 160-unit network rollout (Fortinet, Unifi, FortiSwitch) on the Al-Diriyah project, directly supervising a 10-person team, alongside building a custom SaaS site with full documentation.">قيادة   ١٦٠ وحدة شبكية (Fortinet, Unifi, FortiSwitch) في مشروع الدرعية، مع إشراف مباشر على فريق من ١٠ أفراد، بالتوازي مع تطوير موقع SaaS مخصص بتوثيق كامل لتسليم واضح.</p>
-        <div class="featured-stats">
-          <div class="fstat"><b>160+</b><span data-ar="وحدة شبكية" data-en="network units">وحدة شبكية</span></div>
-          <div class="fstat"><b>10</b><span data-ar="أفراد فريق" data-en="team members">أفراد فريق</span></div>
-          <div class="fstat"><b>2025–2026</b><span data-ar="مدة التنفيذ" data-en="project duration">مدة التنفيذ</span></div>
-        </div>
-        <div class="featured-brands">
-          <span class="fbrand">FortiGate</span><span class="fbrand">FortiSwitch</span><span class="fbrand">Ubiquiti UniFi</span><span class="fbrand">Cisco</span>
-        </div>
-        </div>
-      </article>
-
-      <article class="featured-card reveal">
-        <div class="featured-ribbon" data-ar="الأحدث" data-en="Newest">الأحدث</div>
-        <div class="featured-media"><img src="images/rack-front-complete.jpg" alt="Ninja branch full network cabinet" loading="lazy"></div>
-        <div class="featured-body">
-        <span class="featured-tag" data-ar="مشروع Ninja — Fire Rocks" data-en="Ninja Project — Fire Rocks">مشروع Ninja — Fire Rocks</span>
-        <h3 data-ar="تنفيذ ٥٠+ فرع خلال شهرين" data-en="50+ Handover deployed in two months">تنفيذ ٥٠+ فرع خلال شهرين</h3>
-        <p data-ar="تنفيذ وتسليم بنية شبكية وأنظمة تيار منخفض عبر أكثر من ٥٠ فرع لصالح Ninja، بالتنسيق المباشر مع فرق فنية ميدانية متعددة لضمان التسليم في الوقت." data-en="Deployed network infrastructure and low-current systems across 50+ Ninja branches, coordinating directly with multiple field technician teams to hit tight delivery timelines.">تنفيذ وتسليم بنية شبكية وأنظمة تيار منخفض عبر أكثر من ٥٠ فرع لصالح Ninja، بالتنسيق المباشر مع فرق فنية ميدانية متعددة لضمان التسليم في الوقت.</p>
-        <div class="featured-stats">
-          <div class="fstat"><b>50+</b><span data-ar="فرع" data-en="branches">فرع</span></div>
-          <div class="fstat"><b>2</b><span data-ar="أشهر تنفيذ" data-en="months to deliver">أشهر تنفيذ</span></div>
-          <div class="fstat"><b>2026</b><span data-ar="سنة التنفيذ" data-en="year">سنة التنفيذ</span></div>
-        </div>
-        <div class="featured-brands">
-          <span class="fbrand">CCTV</span><span class="fbrand">Networking</span><span class="fbrand">Access Control</span><span class="fbrand">Hikvision</span><span class="fbrand">Ubiquiti UniFi</span>
-          <span class="fbrand">Corning</span><span class="fbrand">Z</span>
-        </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section services" id="services">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="الخدمات" data-en="Services">الخدمات</p>
-    <h2 class="section-title" data-ar="حلول تقنية من الشبكات إلى التشغيل" data-en="Technical solutions from networks to operation">حلول تقنية من الشبكات إلى التشغيل</h2>
-    <p class="journey-intro reveal" data-ar="تهيئة وتشغيل الشبكات، ربط الفروع، أنظمة التيار المنخفض، مراكز البيانات، وحلول برمجية مناسبة لطبيعة مشروعك." data-en="Configuration and operation of networks, branch connectivity, low-current systems, data centers and software tailored to your project.">تهيئة وتشغيل الشبكات، ربط الفروع، أنظمة التيار المنخفض، مراكز البيانات، وحلول برمجية مناسبة لطبيعة مشروعك.</p>
-
-    <div class="services-grid">
-      <article class="service-card reveal ic-cctv">
-        <div class="service-icon ic-cctv">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="9" width="12" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M15 11.5 21 9v6l-6-2.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 data-ar="كاميرات المراقبة CCTV" data-en="CCTV surveillance">كاميرات المراقبة CCTV</h3>
-        <p data-ar="تركيب وصيانة كاميرات IP وأنالوج، أنظمة DVR/NVR، بماركات Hikvision وDahua، مع مراقبة عن بُعد." data-en="IP and analog camera installation, DVR/NVR systems, Hikvision and Dahua hardware, with remote monitoring.">تركيب وصيانة كاميرات IP وأنالوج، أنظمة DVR/NVR، بماركات Hikvision وDahua، مع مراقبة عن بُعد.</p>
-      </article>
-
-      <article class="service-card reveal ic-net">
-        <div class="service-icon ic-net">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="5" cy="5" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="5" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="19" r="2" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 6.5 11 17M17.5 6.5 13 17M7 5h10" stroke="currentColor" stroke-width="1.6"/></svg>
-        </div>
-        <h3 data-ar="Fortinet و Cisco وربط الفروع" data-en="Fortinet, Cisco &amp; branch networks">Fortinet و Cisco وربط الفروع</h3>
-        <p data-ar="تهيئة Firewall وVPN وRouting وVLAN، وربط الفروع وحل مشكلات الاتصال والأمان." data-en="Firewall, VPN, routing and VLAN configuration, plus branch connectivity and troubleshooting.">تصميم وإعداد جدران حماية FortiGate وCisco، تقسيم VLAN، و تنفيذ بنية شبكية عبر فروع متعددة.</p>
-      </article>
-
-      <article class="service-card reveal ic-access">
-        <div class="service-icon ic-access">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="15" r="1.4" fill="currentColor"/></svg>
-        </div>
-        <h3 data-ar="تحكم الدخول Access Control" data-en="Access control">تحكم الدخول Access Control</h3>
-        <p data-ar="أنظمة بصمة، بطاقات، وقفل إلكتروني للأبواب والبوابات، مرتبطة بسجلات حضور ودخول دقيقة." data-en="Fingerprint, card, and electronic lock systems for doors and gates, tied into accurate attendance and access logs.">أنظمة بصمة، بطاقات، وقفل إلكتروني للأبواب والبوابات، مرتبطة بسجلات حضور ودخول دقيقة.</p>
-      </article>
-
-      <article class="service-card reveal ic-intercom">
-        <div class="service-icon ic-intercom">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="17" r="1.2" fill="currentColor"/><path d="M9.5 7h5M9.5 10h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-        </div>
-        <h3 data-ar="إنتركم وPBX / VoIP" data-en="Intercom &amp; PBX / VoIP">إنتركم وPBX / VoIP</h3>
-        <p data-ar="تركيب أنظمة إنتركم فيديو وصوت، وسنترالات PBX/VoIP للمنشآت والمجمعات السكنية." data-en="Video and audio intercom systems, plus PBX/VoIP setups for facilities and residential compounds.">تركيب أنظمة إنتركم فيديو وصوت، وسنترالات PBX/VoIP للمنشآت والمجمعات السكنية.</p>
-      </article>
-
-      <article class="service-card reveal ic-smart">
-        <div class="service-icon ic-smart">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><rect x="10" y="14" width="4" height="5" stroke="currentColor" stroke-width="1.6"/></svg>
-        </div>
-        <h3 data-ar="مراكز البيانات والبنية التحتية" data-en="Data centers &amp; infrastructure">مراكز البيانات والبنية التحتية</h3>
-        <p data-ar="تجهيز الراك والسيرفرات، تنظيم الكابلات والـPatch Panels، وربط أنظمة التشغيل والشبكات." data-en="Rack and server setup, structured cabling, patch panels and connected infrastructure.">تجهيز الراك والسيرفرات، تنظيم الكابلات والـPatch Panels، وربط أنظمة التشغيل والشبكات.</p>
-      </article>
-
-      <article class="service-card reveal ic-saas">
-        <div class="service-icon ic-saas">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </div>
-        <h3 data-ar="مواقع، تطبيقات، ومنصات SaaS" data-en="Websites, apps &amp; SaaS platforms">مواقع، تطبيقات، ومنصات SaaS</h3>
-        <p data-ar="أي فكرة موقع أو تطبيق أو نظام إدارة عندك — بابنيها بـ React وNext.js مع Firebase وSupabase، من الفكرة الأولى لحد التشغيل الفعلي." data-en="Any idea for a website, app, or management system — built with React, Next.js, Firebase, and Supabase, from first concept to live launch.">أي فكرة موقع أو تطبيق أو نظام إدارة عندك — بابنيها بـ React وNext.js مع Firebase وSupabase، من الفكرة الأولى لحد التشغيل الفعلي.</p>
-      </article>
-      <article class="service-card reveal ic-net">
-        <div class="service-icon ic-net"><svg viewBox="0 0 24 24" fill="none"><circle cx="5" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M8 12h8M11 9l-3 3 3 3M13 9l3 3-3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-        <h3 data-ar="ربط الفروع و VPN" data-en="Branch connectivity &amp; VPN">ربط الفروع و VPN</h3>
-        <p data-ar="ربط الشبكات والسنترالات بين الفروع، إعداد VPN وRouting والوصول الآمن، بأجهزة مخصصة أو بحلول مناسبة للبنية الحالية." data-en="Connect branch networks and phone systems using VPN, routing and secure access, with dedicated hardware or the right fit for your existing setup.">ربط الشبكات والسنترالات بين الفروع، إعداد VPN وRouting والوصول الآمن، بأجهزة مخصصة أو بحلول مناسبة للبنية الحالية.</p>
-      </article>
-      <article class="service-card reveal ic-access">
-        <div class="service-icon ic-access"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-        <h3 data-ar="الشاشات التفاعلية والحضور" data-en="Interactive displays &amp; attendance">الشاشات التفاعلية والحضور</h3>
-        <p data-ar="تركيب الشاشات التفاعلية وأنظمة ZKTeco وBioTime وربط أجهزة الحضور والانصراف بالشبكة والتطبيقات." data-en="Install interactive displays, ZKTeco and BioTime systems, and connect attendance devices to the network and applications.">تركيب الشاشات التفاعلية وأنظمة ZKTeco وBioTime وربط أجهزة الحضور والانصراف بالشبكة والتطبيقات.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section brands" id="brands">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="البراندات اللي بشتغل بيها" data-en="Brands I work with">البراندات اللي بشتغل بيها</p>
-    <h2 class="section-title" data-ar="أجهزة وماركات معتمدة عالمياً" data-en="Globally trusted hardware brands">أجهزة وماركات معتمدة عالمياً</h2>
-  </div>
-
-  <div class="brand-carousel">
-    <div class="brand-track">
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">HIK</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Hikvision</span><span class="brand-chip-cat" data-ar="كاميرات مراقبة" data-en="CCTV cameras">كاميرات مراقبة</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">DH</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Dahua</span><span class="brand-chip-cat" data-ar="كاميرات وDVR/NVR" data-en="Cameras &amp; DVR/NVR">كاميرات وDVR/NVR</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">UNV</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Uniview</span><span class="brand-chip-cat" data-ar="كاميرات مراقبة" data-en="CCTV cameras">كاميرات مراقبة</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">FG</span></span><span class="brand-chip-copy"><span class="brand-chip-name">FortiNet</span><span class="brand-chip-cat" data-ar="جدران حماية" data-en="Firewalls">جدران حماية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">CS</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Cisco</span><span class="brand-chip-cat" data-ar="بنية شبكات مؤسسية" data-en="Enterprise networking">بنية شبكات مؤسسية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">MT</span></span><span class="brand-chip-copy"><span class="brand-chip-name">MikroTik</span><span class="brand-chip-cat" data-ar="راوتر وشبكات" data-en="Routers &amp; networking">راوتر وشبكات</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">RL</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Reolink</span><span class="brand-chip-cat" data-ar="كاميرات لاسلكية" data-en="Wireless cameras">كاميرات لاسلكية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">TP</span></span><span class="brand-chip-copy"><span class="brand-chip-name">TP-Link</span><span class="brand-chip-cat" data-ar="شبكات ومعدات IT" data-en="Networking &amp; IT gear">شبكات ومعدات IT</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">UI</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Ubiquiti UniFi</span><span class="brand-chip-cat" data-ar="شبكات ونقاط وصول" data-en="Networking &amp; access points">شبكات ونقاط وصول</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">RJ</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Ruijie</span><span class="brand-chip-cat" data-ar="سويتشات ونقاط وصول" data-en="Switches &amp; access points">سويتشات ونقاط وصول</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">AQ</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Aqara</span><span class="brand-chip-cat" data-ar="منازل ومكاتب ذكية" data-en="Smart home &amp; office">منازل ومكاتب ذكية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">YL</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Yealink</span><span class="brand-chip-cat" data-ar="هواتف IP" data-en="IP phones">هواتف IP</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">GS</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Grandstream</span><span class="brand-chip-cat">PBX / VoIP</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">AX</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Axis</span><span class="brand-chip-cat" data-ar="كاميرات احترافية" data-en="Professional cameras">كاميرات احترافية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">TY</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Tuya</span><span class="brand-chip-cat" data-ar="إنترنت الأشياء" data-en="IoT">إنترنت الأشياء</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">SO</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Sonoff</span><span class="brand-chip-cat" data-ar="أتمتة منزلية" data-en="Home automation">أتمتة منزلية</span></span></div>
-      <!-- duplicate for seamless loop -->
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">HIK</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Hikvision</span><span class="brand-chip-cat" data-ar="كاميرات مراقبة" data-en="CCTV cameras">كاميرات مراقبة</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">DH</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Dahua</span><span class="brand-chip-cat" data-ar="كاميرات وDVR/NVR" data-en="Cameras &amp; DVR/NVR">كاميرات وDVR/NVR</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">UNV</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Uniview</span><span class="brand-chip-cat" data-ar="كاميرات مراقبة" data-en="CCTV cameras">كاميرات مراقبة</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">FG</span></span><span class="brand-chip-copy"><span class="brand-chip-name">FortiNet</span><span class="brand-chip-cat" data-ar="جدران حماية" data-en="Firewalls">جدران حماية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">CS</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Cisco</span><span class="brand-chip-cat" data-ar="بنية شبكات مؤسسية" data-en="Enterprise networking">بنية شبكات مؤسسية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">MT</span></span><span class="brand-chip-copy"><span class="brand-chip-name">MikroTik</span><span class="brand-chip-cat" data-ar="راوتر وشبكات" data-en="Routers &amp; networking">راوتر وشبكات</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">RL</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Reolink</span><span class="brand-chip-cat" data-ar="كاميرات لاسلكية" data-en="Wireless cameras">كاميرات لاسلكية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">TP</span></span><span class="brand-chip-copy"><span class="brand-chip-name">TP-Link</span><span class="brand-chip-cat" data-ar="شبكات ومعدات IT" data-en="Networking &amp; IT gear">شبكات ومعدات IT</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">UI</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Ubiquiti UniFi</span><span class="brand-chip-cat" data-ar="شبكات ونقاط وصول" data-en="Networking &amp; access points">شبكات ونقاط وصول</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">RJ</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Ruijie</span><span class="brand-chip-cat" data-ar="سويتشات ونقاط وصول" data-en="Switches &amp; access points">سويتشات ونقاط وصول</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">AQ</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Aqara</span><span class="brand-chip-cat" data-ar="منازل ومكاتب ذكية" data-en="Smart home &amp; office">منازل ومكاتب ذكية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">YL</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Yealink</span><span class="brand-chip-cat" data-ar="هواتف IP" data-en="IP phones">هواتف IP</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">GS</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Grandstream</span><span class="brand-chip-cat">PBX / VoIP</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">AX</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Axis</span><span class="brand-chip-cat" data-ar="كاميرات احترافية" data-en="Professional cameras">كاميرات احترافية</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">TY</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Tuya</span><span class="brand-chip-cat" data-ar="إنترنت الأشياء" data-en="IoT">إنترنت الأشياء</span></span></div>
-      <div class="brand-chip"><span class="brand-icon"><span class="brand-mark">SO</span></span><span class="brand-chip-copy"><span class="brand-chip-name">Sonoff</span><span class="brand-chip-cat" data-ar="أتمتة منزلية" data-en="Home automation">أتمتة منزلية</span></span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section gallery" id="gallery">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="معرض الأعمال" data-en="Project gallery">معرض الأعمال</p>
-    <h2 class="section-title" data-ar="من الموقع إلى غرفة التحكم" data-en="From site work to system control">من الموقع إلى غرفة التحكم</h2>
-    <p class="gallery-intro" data-ar="صور من أعمال التركيب والتجهيز والأنظمة. اختر المجال لمشاهدة التفاصيل." data-en="Photos of installations, infrastructure and systems. Select a category to explore.">صور من أعمال التركيب والتجهيز والأنظمة. اختر المجال لمشاهدة التفاصيل.</p>
-    <div class="gallery-filters" role="group" aria-label="Gallery categories"><button type="button" class="gallery-filter active" data-filter="all" aria-pressed="true" data-ar="كل الأعمال" data-en="All work">كل الأعمال</button><button type="button" class="gallery-filter" data-filter="network" aria-pressed="false" data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</button><button type="button" class="gallery-filter" data-filter="data" aria-pressed="false" data-ar="مراكز البيانات" data-en="Data centers">مراكز البيانات</button><button type="button" class="gallery-filter" data-filter="surveillance" aria-pressed="false" data-ar="الكاميرات" data-en="Surveillance">الكاميرات</button><button type="button" class="gallery-filter" data-filter="elv" aria-pressed="false" data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</button><button type="button" class="gallery-filter" data-filter="software" aria-pressed="false" data-ar="البرمجيات" data-en="Software">البرمجيات</button></div>
-    <div class="gallery-grid"><button type="button" class="gallery-item reveal" data-category="network" data-image="images/rack-fortiswitch-close.jpg" data-title-ar="تفاصيل سويتشات Fortinet" data-title-en="Fortinet switches close-up" aria-label="تفاصيل سويتشات Fortinet">
-  <img src="images/rack-fortiswitch-close.jpg" alt="تفاصيل سويتشات Fortinet" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تفاصيل سويتشات Fortinet" data-en="Fortinet switches close-up">تفاصيل سويتشات Fortinet</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/rack-cable-management.webp" data-title-ar="تنظيم الكابلات داخل الراك" data-title-en="Rack cable management" aria-label="تنظيم الكابلات داخل الراك">
-  <img src="images/rack-cable-management.webp" alt="تنظيم الكابلات داخل الراك" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تنظيم الكابلات داخل الراك" data-en="Rack cable management">تنظيم الكابلات داخل الراك</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/rack-corning-wifi.jpg" data-title-ar="راك شبكات وسويتشات" data-title-en="Network rack and switches" aria-label="راك شبكات وسويتشات">
-  <img src="images/rack-corning-wifi.jpg" alt="راك شبكات وسويتشات" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="راك شبكات وسويتشات" data-en="Network rack and switches">راك شبكات وسويتشات</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/attendance-terminal.webp" data-title-ar="جهاز حضور وانصراف بالبصمة" data-title-en="Biometric attendance device" aria-label="جهاز حضور وانصراف بالبصمة">
-  <img src="images/attendance-terminal.webp" alt="جهاز حضور وانصراف بالبصمة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="جهاز حضور وانصراف بالبصمة" data-en="Biometric attendance device">جهاز حضور وانصراف بالبصمة</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="surveillance" data-image="images/outdoor-camera.webp" data-title-ar="كاميرا مراقبة خارجية" data-title-en="Outdoor surveillance camera" aria-label="كاميرا مراقبة خارجية">
-  <img src="images/outdoor-camera.webp" alt="كاميرا مراقبة خارجية" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="كاميرا مراقبة خارجية" data-en="Outdoor surveillance camera">كاميرا مراقبة خارجية</span><small data-ar="الكاميرات" data-en="Surveillance">الكاميرات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="data" data-image="images/server-rack-asm.jpg" data-title-ar="راك سيرفرات وتجهيزات" data-title-en="Server rack infrastructure" aria-label="راك سيرفرات وتجهيزات">
-  <img src="images/server-rack-asm.jpg" alt="راك سيرفرات وتجهيزات" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="راك سيرفرات وتجهيزات" data-en="Server rack infrastructure">راك سيرفرات وتجهيزات</span><small data-ar="مراكز البيانات" data-en="Data centers">مراكز البيانات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/interactive-display.webp" data-title-ar="شاشة تفاعلية وتجهيزات العرض" data-title-en="Interactive display setup" aria-label="شاشة تفاعلية وتجهيزات العرض">
-  <img src="images/interactive-display.webp" alt="شاشة تفاعلية وتجهيزات العرض" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="شاشة تفاعلية وتجهيزات العرض" data-en="Interactive display setup">شاشة تفاعلية وتجهيزات العرض</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button>
-
-<button type="button" class="gallery-item reveal" data-category="data" data-image="images/infrastructure-rack.webp" data-title-ar="تجهيز راك البنية التحتية" data-title-en="Infrastructure rack installation" aria-label="تجهيز راك البنية التحتية">
-  <img src="images/infrastructure-rack.webp" alt="تجهيز راك البنية التحتية" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تجهيز راك البنية التحتية" data-en="Infrastructure rack installation">تجهيز راك البنية التحتية</span><small data-ar="مراكز البيانات" data-en="Data centers">مراكز البيانات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="surveillance" data-image="images/surveillance-rack.webp" data-title-ar="راك أنظمة المراقبة" data-title-en="Surveillance equipment rack" aria-label="راك أنظمة المراقبة">
-  <img src="images/surveillance-rack.webp" alt="راك أنظمة المراقبة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="راك أنظمة المراقبة" data-en="Surveillance equipment rack">راك أنظمة المراقبة</span><small data-ar="الكاميرات" data-en="Surveillance">الكاميرات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="data" data-image="images/data-center-cabinets.webp" data-title-ar="راك وخزائن مركز بيانات" data-title-en="Data center rack and cabinets" aria-label="راك وخزائن مركز بيانات">
-  <img src="images/data-center-cabinets.webp" alt="راك وخزائن مركز بيانات" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="راك وخزائن مركز بيانات" data-en="Data center rack and cabinets">راك وخزائن مركز بيانات</span><small data-ar="مراكز البيانات" data-en="Data centers">مراكز البيانات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="data" data-image="images/server-cabinet-installation.webp" data-title-ar="تجهيز خزانة سيرفرات" data-title-en="Server cabinet installation" aria-label="تجهيز خزانة سيرفرات">
-  <img src="images/server-cabinet-installation.webp" alt="تجهيز خزانة سيرفرات" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تجهيز خزانة سيرفرات" data-en="Server cabinet installation">تجهيز خزانة سيرفرات</span><small data-ar="مراكز البيانات" data-en="Data centers">مراكز البيانات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/technology-systems-display.webp" data-title-ar="عرض تجهيزات الأنظمة التقنية" data-title-en="Technology systems display" aria-label="عرض تجهيزات الأنظمة التقنية">
-  <img src="images/technology-systems-display.webp" alt="عرض تجهيزات الأنظمة التقنية" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="عرض تجهيزات الأنظمة التقنية" data-en="Technology systems display">عرض تجهيزات الأنظمة التقنية</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/network-cabinet-equipment.webp" data-title-ar="معدات شبكات داخل راك" data-title-en="Network equipment in cabinet" aria-label="معدات شبكات داخل راك">
-  <img src="images/network-cabinet-equipment.webp" alt="معدات شبكات داخل راك" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="معدات شبكات داخل راك" data-en="Network equipment in cabinet">معدات شبكات داخل راك</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/structured-rack-cabling.webp" data-title-ar="توصيلات راك وشبكة داخلية" data-title-en="Structured rack cabling" aria-label="توصيلات راك وشبكة داخلية">
-  <img src="images/structured-rack-cabling.webp" alt="توصيلات راك وشبكة داخلية" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="توصيلات راك وشبكة داخلية" data-en="Structured rack cabling">توصيلات راك وشبكة داخلية</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/information-display.webp" data-title-ar="شاشة نظام عرض معلومات" data-title-en="Information display system" aria-label="شاشة نظام عرض معلومات">
-  <img src="images/information-display.webp" alt="شاشة نظام عرض معلومات" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="شاشة نظام عرض معلومات" data-en="Information display system">شاشة نظام عرض معلومات</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/entrance-intercom.webp" data-title-ar="وحدة إنتركم عند المدخل" data-title-en="Entrance intercom panel" aria-label="وحدة إنتركم عند المدخل">
-  <img src="images/entrance-intercom.webp" alt="وحدة إنتركم عند المدخل" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="وحدة إنتركم عند المدخل" data-en="Entrance intercom panel">وحدة إنتركم عند المدخل</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/switch-cabling.webp" data-title-ar="سويتشات وتوصيلات الشبكة" data-title-en="Network switches and cabling" aria-label="سويتشات وتوصيلات الشبكة">
-  <img src="images/switch-cabling.webp" alt="سويتشات وتوصيلات الشبكة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="سويتشات وتوصيلات الشبكة" data-en="Network switches and cabling">سويتشات وتوصيلات الشبكة</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/switch-rack.webp" data-title-ar="راك شبكات وسويتشات" data-title-en="Network rack and switches" aria-label="راك شبكات وسويتشات">
-  <img src="images/switch-rack.webp" alt="راك شبكات وسويتشات" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="راك شبكات وسويتشات" data-en="Network rack and switches">راك شبكات وسويتشات</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/onsite-installation.webp" data-title-ar="تركيب وتجهيز الشبكة بالموقع" data-title-en="On-site network installation" aria-label="تركيب وتجهيز الشبكة بالموقع">
-  <img src="images/onsite-installation.webp" alt="تركيب وتجهيز الشبكة بالموقع" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تركيب وتجهيز الشبكة بالموقع" data-en="On-site network installation">تركيب وتجهيز الشبكة بالموقع</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/low-current-unit.webp" data-title-ar="وحدة أنظمة تيار منخفض" data-title-en="Low-current system unit" aria-label="وحدة أنظمة تيار منخفض">
-  <img src="images/low-current-unit.webp" alt="وحدة أنظمة تيار منخفض" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="وحدة أنظمة تيار منخفض" data-en="Low-current system unit">وحدة أنظمة تيار منخفض</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/security-system-point.webp" data-title-ar="تجهيز نقطة نظام أمني" data-title-en="Security system point installation" aria-label="تجهيز نقطة نظام أمني">
-  <img src="images/security-system-point.webp" alt="تجهيز نقطة نظام أمني" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تجهيز نقطة نظام أمني" data-en="Security system point installation">تجهيز نقطة نظام أمني</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/fortigate-fortiswitch-box.jpg" data-title-ar="معدات FortiGate وFortiSwitch" data-title-en="FortiGate and FortiSwitch hardware" aria-label="معدات FortiGate وFortiSwitch">
-  <img src="images/fortigate-fortiswitch-box.jpg" alt="معدات FortiGate وFortiSwitch" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="معدات FortiGate وFortiSwitch" data-en="FortiGate and FortiSwitch hardware">معدات FortiGate وFortiSwitch</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/rack-front-complete.jpg" data-title-ar="راك شبكة مكتمل" data-title-en="Completed network cabinet" aria-label="راك شبكة مكتمل">
-  <img src="images/rack-front-complete.jpg" alt="راك شبكة مكتمل" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="راك شبكة مكتمل" data-en="Completed network cabinet">راك شبكة مكتمل</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/planet-switch-cable-mgmt.jpg" data-title-ar="تنظيم كابلات الشبكة" data-title-en="Network cable management" aria-label="تنظيم كابلات الشبكة">
-  <img src="images/planet-switch-cable-mgmt.jpg" alt="تنظيم كابلات الشبكة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تنظيم كابلات الشبكة" data-en="Network cable management">تنظيم كابلات الشبكة</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/avayo-patch-panels.jpg" data-title-ar="Patch Panels وتوصيلات الشبكة" data-title-en="Patch panels and network cabling" aria-label="Patch Panels وتوصيلات الشبكة">
-  <img src="images/avayo-patch-panels.jpg" alt="Patch Panels وتوصيلات الشبكة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="Patch Panels وتوصيلات الشبكة" data-en="Patch panels and network cabling">Patch Panels وتوصيلات الشبكة</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="network" data-image="images/rack-ceiling-mount.jpg" data-title-ar="تركيب راك جداري" data-title-en="Wall-mounted rack installation" aria-label="تركيب راك جداري">
-  <img src="images/rack-ceiling-mount.jpg" alt="تركيب راك جداري" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تركيب راك جداري" data-en="Wall-mounted rack installation">تركيب راك جداري</span><small data-ar="الشبكات و VPN" data-en="Networks & VPN">الشبكات و VPN</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="software" data-image="images/laptop-dashboard-rack.jpg" data-title-ar="لوحة متابعة مع راك الشبكة" data-title-en="Monitoring dashboard with network rack" aria-label="لوحة متابعة مع راك الشبكة">
-  <img src="images/laptop-dashboard-rack.jpg" alt="لوحة متابعة مع راك الشبكة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="لوحة متابعة مع راك الشبكة" data-en="Monitoring dashboard with network rack">لوحة متابعة مع راك الشبكة</span><small data-ar="البرمجيات" data-en="Software">البرمجيات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="surveillance" data-image="images/rack-full-hikvision.jpg" data-title-ar="راك كاميرات المراقبة" data-title-en="Surveillance system rack" aria-label="راك كاميرات المراقبة">
-  <img src="images/rack-full-hikvision.jpg" alt="راك كاميرات المراقبة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="راك كاميرات المراقبة" data-en="Surveillance system rack">راك كاميرات المراقبة</span><small data-ar="الكاميرات" data-en="Surveillance">الكاميرات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="surveillance" data-image="images/hikvision-rack-stc5g.jpg" data-title-ar="تجهيزات نظام المراقبة" data-title-en="Surveillance system equipment" aria-label="تجهيزات نظام المراقبة">
-  <img src="images/hikvision-rack-stc5g.jpg" alt="تجهيزات نظام المراقبة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تجهيزات نظام المراقبة" data-en="Surveillance system equipment">تجهيزات نظام المراقبة</span><small data-ar="الكاميرات" data-en="Surveillance">الكاميرات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="surveillance" data-image="images/dahua-nvr-ruijie-switch.jpg" data-title-ar="مسجل NVR وسويتش شبكة" data-title-en="NVR recorder and network switch" aria-label="مسجل NVR وسويتش شبكة">
-  <img src="images/dahua-nvr-ruijie-switch.jpg" alt="مسجل NVR وسويتش شبكة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="مسجل NVR وسويتش شبكة" data-en="NVR recorder and network switch">مسجل NVR وسويتش شبكة</span><small data-ar="الكاميرات" data-en="Surveillance">الكاميرات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="surveillance" data-image="images/cctv-lockbox-wall.jpg" data-title-ar="تجهيز كاميرات بالموقع" data-title-en="On-site camera equipment" aria-label="تجهيز كاميرات بالموقع">
-  <img src="images/cctv-lockbox-wall.jpg" alt="تجهيز كاميرات بالموقع" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="تجهيز كاميرات بالموقع" data-en="On-site camera equipment">تجهيز كاميرات بالموقع</span><small data-ar="الكاميرات" data-en="Surveillance">الكاميرات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="surveillance" data-image="images/cctv-monitor-wall.jpg" data-title-ar="شاشات عرض كاميرات المراقبة" data-title-en="Surveillance monitor wall" aria-label="شاشات عرض كاميرات المراقبة">
-  <img src="images/cctv-monitor-wall.jpg" alt="شاشات عرض كاميرات المراقبة" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="شاشات عرض كاميرات المراقبة" data-en="Surveillance monitor wall">شاشات عرض كاميرات المراقبة</span><small data-ar="الكاميرات" data-en="Surveillance">الكاميرات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="surveillance" data-image="images/cctv-villa-gate.jpg" data-title-ar="كاميرا مراقبة خارجية" data-title-en="Outdoor surveillance camera" aria-label="كاميرا مراقبة خارجية">
-  <img src="images/cctv-villa-gate.jpg" alt="كاميرا مراقبة خارجية" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="كاميرا مراقبة خارجية" data-en="Outdoor surveillance camera">كاميرا مراقبة خارجية</span><small data-ar="الكاميرات" data-en="Surveillance">الكاميرات</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/avayo-pbx-rack.jpg" data-title-ar="سنترال واتصالات داخل راك" data-title-en="PBX and telecom rack" aria-label="سنترال واتصالات داخل راك">
-  <img src="images/avayo-pbx-rack.jpg" alt="سنترال واتصالات داخل راك" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="سنترال واتصالات داخل راك" data-en="PBX and telecom rack">سنترال واتصالات داخل راك</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button>
-<button type="button" class="gallery-item reveal" data-category="elv" data-image="images/yealink-ip-phone.jpg" data-title-ar="هاتف IP للسنترال" data-title-en="IP phone system" aria-label="هاتف IP للسنترال">
-  <img src="images/yealink-ip-phone.jpg" alt="هاتف IP للسنترال" loading="lazy" decoding="async">
-  <span class="gallery-caption"><span data-ar="هاتف IP للسنترال" data-en="IP phone system">هاتف IP للسنترال</span><small data-ar="التيار المنخفض" data-en="Low current">التيار المنخفض</small></span>
-</button></div>
-  </div>
-</section>
-<dialog class="gallery-lightbox" id="galleryLightbox" aria-label="Project photo"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img alt=""><p></p></dialog>
-
-<section class="section journey" id="journey">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="المسيرة المهنية" data-en="Career journey">المسيرة المهنية</p>
-    <h2 class="section-title" data-ar="من دعم فني وIT إلى مطوّر SaaS" data-en="From IT support to SaaS developer">من دعم فني وIT إلى مطوّر SaaS</h2>
-    <p class="journey-intro reveal" data-ar="بدأت الطريق سنة ٢٠١٨ بتركيب كاميرات المراقبة وأنظمة الشبكات على الأرض، وع مدار ٧ سنين اتوسعت للبنية التحتية للمؤسسات الكبيرة، وبعدين قررت اتعلم البرمجة عشان أبني الأنظمة اللي كنت بس بشغّلها." data-en="I started in 2018 installing CCTV and network systems on the ground, and over 7 years grew into enterprise-scale infrastructure work — then taught myself to build the software running on top of it.">بدأت الطريق سنة ٢٠١٨ بتركيب كاميرات المراقبة وأنظمة الشبكات على الأرض، وع مدار ٧ سنين اتوسعت للبنية التحتية للمؤسسات الكبيرة، وبعدين قررت اتعلم البرمجة عشان أبني الأنظمة اللي كنت بس بشغّلها.</p>
-
-    <div class="timeline">
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2018 – 2021</span>
-          <h3 data-ar="دعم فني — تركيب أنظمة تيار منخفض" data-en="IT support — low-current systems installation">دعم فني — تركيب أنظمة تيار منخفض</h3>
-          <p data-ar="دمياط. تركيب كاميرات IP وأنالوج، أنظمة DVR/NVR، وتحكم دخول للمنشآت الصغيرة والمتوسطة، مع دعم فني يومي للعملاء وحل أعطال الأجهزة على الطبيعة." data-en="Damietta. IP and analog CCTV installation, DVR/NVR systems, and access control for small and mid-size facilities, plus day-to-day client support and on-site hardware troubleshooting.">دمياط. تركيب كاميرات IP وأنالوج، أنظمة DVR/NVR، وتحكم دخول للمنشآت الصغيرة والمتوسطة، مع دعم فني يومي للعملاء وحل أعطال الأجهزة على الطبيعة.</p>
-          <div class="tag-row" style="margin-top:12px">
-            <span class="tag" data-ar="دعم فني ميداني" data-en="On-site IT support">دعم فني ميداني</span>
-            <span class="tag" data-ar="صيانة أجهزة" data-en="Hardware maintenance">صيانة أجهزة</span>
-            <span class="tag" data-ar="تركيب DVR/NVR" data-en="DVR/NVR setup">تركيب DVR/NVR</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2021 – 2024</span>
-          <h3 data-ar="قائد مشروع — CCTV والتيار المنخفض + دعم فني بدوام جزئي" data-en="Project lead — CCTV &amp; low-current, plus part-time IT support">قائد مشروع — CCTV والتيار المنخفض + دعم فني بدوام جزئي</h3>
-          <p data-ar="مواقع متعددة. قيادة تركيبات PBX وVoIP وتحكم دخول، مع دعم فني عن بُعد وميداني للمستخدمين، واستكشاف أعطال الشبكات لعدة شركات بالتوازي." data-en="Multiple sites. Led PBX, VoIP, and access control installs, with remote and on-site end-user support and network troubleshooting for several companies in parallel.">مواقع متعددة. قيادة تركيبات PBX وVoIP وتحكم دخول، مع دعم فني عن بُعد وميداني للمستخدمين، واستكشاف أعطال الشبكات لعدة شركات بالتوازي.</p>
-          <div class="tag-row" style="margin-top:12px">
-            <span class="tag" data-ar="دعم مستخدمين عن بُعد" data-en="Remote user support">دعم مستخدمين عن بُعد</span>
-            <span class="tag" data-ar="استكشاف أعطال الشبكة" data-en="Network troubleshooting">استكشاف أعطال الشبكة</span>
-            <span class="tag" data-ar="إدارة تذاكر الدعم" data-en="Support ticketing">إدارة تذاكر الدعم</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2024 – 2025</span>
-          <h3 data-ar="أخصائي IT وتيار منخفض — Qemah Al-Ibtikaar" data-en="IT &amp; low-current specialist — Qemah Al-Ibtikaar">أخصائي IT وتيار منخفض — Qemah Al-Ibtikaar</h3>
-          <p data-ar="الشفا، الرياض. تهيئة أجهزة الشبكات، إدارة حسابات المستخدمين والصلاحيات، ودعم فني داخلي يومي بجانب تخطيط البنية التحتية لمشاريع متعددة." data-en="Al-Shifa, Riyadh. Network device configuration, user account and permissions management, and daily internal IT support alongside infrastructure planning across multiple projects.">الشفا، الرياض. تهيئة أجهزة الشبكات، إدارة حسابات المستخدمين والصلاحيات، ودعم فني داخلي يومي بجانب تخطيط البنية التحتية لمشاريع متعددة.</p>
-          <div class="tag-row" style="margin-top:12px">
-            <span class="tag">Help Desk</span>
-            <span class="tag" data-ar="إدارة مستخدمين وصلاحيات" data-en="User &amp; access management">إدارة مستخدمين وصلاحيات</span>
-            <span class="tag" data-ar="تهيئة أجهزة شبكات" data-en="Network device setup">تهيئة أجهزة شبكات</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal timeline-featured">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2025 – 2026<span class="timeline-badge" data-ar="مشروع بارز" data-en="Featured">مشروع بارز</span></span>
-          <h3 data-ar="مهندس شبكات ومطوّر SaaS — New Nova (مشروع الدرعية)" data-en="Network engineer in New Nova (Al-Diriyah)">مهندس شبكات   — New Nova (مشروع الدرعية)</h3>
-          <p data-ar="قيادة   ١٦٠ وحدة شبكية (Fortinet, Unifi, FortiSwitch)، إشراف على فريق من ١٠ أفراد، وتطوير موقع SaaS مخصص بتوثيق كامل." data-en="Led a 160-unit network rollout (Fortinet, Unifi, FortiSwitch), supervised a 10-person team, and built a custom SaaS site with full documentation.">قيادة   ١٦٠ وحدة شبكية (Fortinet, Unifi, FortiSwitch)، إشراف على فريق من ١٠ أفراد، وتطوير موقع SaaS مخصص بتوثيق كامل.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal timeline-featured">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2026<span class="timeline-badge" data-ar="مشروع بارز" data-en="Featured">مشروع بارز</span></span>
-          <h3 data-ar="دعم فني وشبكات — Fire Rocks (مشروع Ninja)" data-en="IT support &amp; networking — Fire Rocks (Ninja project)">دعم فني وشبكات — Fire Rocks (مشروع Ninja)</h3>
-          <p data-ar="تنفيذ بنية شبكية وأنظمة تيار منخفض عبر ٥٠+ فرع نينجا خلال شهرين، بالتنسيق مع فنيين ميدانيين متعددين." data-en="handover network infrastructure and low-current systems across 50+ branches in two months, coordinating with multiple field technicians."> تنفيذ بنية شبكية وأنظمة تيار منخفض عبر ٥٠+ فرع خلال شهرين، بالتنسيق مع فنيين ميدانيين متعددين.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal timeline-current">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date" data-ar="يونيو ٢٠٢٦ – الآن" data-en="June 2026 – present">يونيو ٢٠٢٦ – الآن</span>
-          <h3 data-ar="مستشار أنظمة أمنية ومطوّر SaaS متكامل (فريلانس)" data-en="Security systems consultant &amp; full-stack SaaS developer (freelance)">مستشار أنظمة أمنية ومطوّر SaaS متكامل (فريلانس)</h3>
-          <p data-ar="تصميم وتنفيذ أنظمة CCTV وشبكات وتحكم دخول لمنشآت في السعودية، وبناء منصات SaaS مخصصة بـ React وNext.js وFirebase وSupabase." data-en="Designing and delivering CCTV, networking, and access control systems for facilities in Saudi Arabia, plus custom SaaS platforms with React, Next.js, Firebase, and Supabase.">تصميم وتنفيذ أنظمة CCTV وشبكات وتحكم دخول لمنشآت في السعودية، وبناء منصات SaaS مخصصة بـ React وNext.js وFirebase وSupabase.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section skills" id="skills">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="المهارات التقنية" data-en="Technical skills">المهارات التقنية</p>
-    <h2 class="section-title" data-ar="أدوات بستخدمها فعلياً" data-en="Tools I actually use">أدوات بستخدمها فعلياً</h2>
-
-    <div class="skills-grid">
-      <div class="skill-group reveal ic-it">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </div>
-        <h3 data-ar="الدعم الفني (IT Support)" data-en="IT support">الدعم الفني (IT Support)</h3>
-        <div class="tag-row">
-          <span class="tag">Help Desk</span><span class="tag">Windows Server</span><span class="tag">Active Directory</span><span class="tag" data-ar="دعم عن بُعد" data-en="Remote support">دعم عن بُعد</span><span class="tag" data-ar="صيانة أجهزة" data-en="Hardware troubleshooting">صيانة أجهزة</span><span class="tag" data-ar="نسخ احتياطي" data-en="Backup &amp; recovery">نسخ احتياطي</span>
-        </div>
-      </div>
-      <div class="skill-group reveal ic-sec">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 data-ar="التيار المنخفض والأمن" data-en="Low-current &amp; security">التيار المنخفض وانظمة التحكم والامن</h3>
-        <div class="tag-row">
-          <span class="tag">Hikvision</span><span class="tag">Dahua</span><span class="tag" data-ar="إنتركم" data-en="Intercom">إنتركم</span><span class="tag">PBX / VoIP</span>
-        </div>
-      </div>
-      <div class="skill-group reveal ic-net">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="5" cy="5" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="5" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="19" r="2" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 6.5 11 17M17.5 6.5 13 17M7 5h10" stroke="currentColor" stroke-width="1.6"/></svg>
-        </div>
-        <h3 data-ar="البنية التحتية والشبكات" data-en="Infrastructure &amp; networking">البنية التحتية والشبكات</h3>
-        <div class="tag-row">
-          <span class="tag">FortiGate</span><span class="tag">Cisco</span><span class="tag">Ubiquiti UniFi</span><span class="tag">Ruijie</span><span class="tag">VLAN</span><span class="tag">TCP/IP · DHCP · DNS</span>
-        </div>
-      </div>
-      <div class="skill-group reveal ic-home">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 data-ar="المنازل والمكاتب الذكية" data-en="Smart home &amp; office">المنازل والمكاتب الذكية</h3>
-        <div class="tag-row">
-          <span class="tag">Tuya</span><span class="tag">Sonoff</span><span class="tag" data-ar="Aqara" data-en="Aqara">Aqara</span>
-        </div>
-      </div>
-      <div class="skill-group reveal ic-dev">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="m9 8-4 4 4 4M15 8l4 4-4 4M13 5l-2 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 data-ar="تطوير المواقع والتطبيقات" data-en="Web &amp; app development">تطوير المواقع والتطبيقات</h3>
-        <div class="tag-row">
-          <span class="tag">React.js</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">Firebase</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">REST APIs</span><span class="tag">HTML · CSS · JS</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section why">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="ليه معايا" data-en="Why work with me">ليه معايا</p>
-    <h2 class="section-title" data-ar="مش مجرد دعم فني، ومش مجرد مبرمج" data-en="Not just IT support, not just a developer">مش مجرد دعم فني، ومش مجرد مبرمج</h2>
-
-    <div class="why-grid">
-      <div class="why-card reveal">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
-        <h3 data-ar="فهم كامل للمنظومة الأمنية" data-en="Full-system security understanding">فهم كامل للمنظومة الأمنية</h3>
-        <p data-ar="أفهم الكاميرا والشبكة والسيرفر كمنظومة واحدة، مش كل جزء لوحده، فالحلول بتكون متكاملة من أول يوم." data-en="I understand the camera, the network, and the server together — not just one piece — so solutions are integrated from day one.">أفهم الكاميرا والشبكة والسيرفر كمنظومة واحدة، مش كل جزء لوحده، فالحلول بتكون متكاملة من أول يوم.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h4l2-7 4 14 2-7h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3 data-ar="خبرة فروع متعددة" data-en="Multi-branch experience">خبرة فروع متعددة</h3>
-        <p data-ar=" تنفيذ ١٦٠ وحدة شبكية و٥٠+ فرع علّمني إدارة مشاريع كبيرة تحت جدول زمني ضيق." data-en="Rolling out 160 network units and 50+ branches taught me to run large projects under real deadlines."> تنفيذ ١٦٠ وحدة شبكية و٥٠+ فرع علّمني إدارة مشاريع كبيرة تحت جدول زمني ضيق.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3 data-ar="توثيق بعد التسليم" data-en="Documentation after delivery">توثيق بعد التسليم</h3>
-        <p data-ar="ما فيش نظام بيتسلّم من غير دليل استخدام واضح، عشان فريقك يقدر يكمّل من غيري." data-en="No system ships without a clear usage guide, so your team can carry on without me.">ما فيش نظام بيتسلّم من غير دليل استخدام واضح، عشان فريقك يقدر يكمّل من غيري.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/></svg></div>
-        <h3 data-ar="أي فكرة، حل كامل" data-en="Any idea, a full solution">أي فكرة، حل كامل</h3>
-        <p data-ar="مش شرط تكون كاميرا أو شبكة — لو عندك فكرة موقع، تطبيق، أو نظام إدارة داخلي، هسمعها منك ونطلع بحل متكامل من التصميم للتشغيل الفعلي." data-en="It doesn't have to be a camera or a network — if you have an idea for a website, app, or internal system, I'll hear it out and build a complete solution from design to launch.">مش شرط تكون كاميرا أو شبكة — لو عندك فكرة موقع، تطبيق، أو نظام إدارة داخلي، هسمعها منك ونطلع بحل متكامل من التصميم للتشغيل الفعلي.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section projects" id="projects">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="مشاريع إضافية" data-en="More projects">مشاريع إضافية</p>
-    <h2 class="section-title" data-ar="مشاريع SaaS اشتغلت عليها" data-en="SaaS projects I've shipped">مشاريع SaaS اشتغلت عليها</h2>
-
-    <div class="project-carousel" aria-label="SaaS projects">
-      <div class="project-track">
-        <article class="project-card">
-          <div class="project-art art-1"><span class="project-badge">SaaS</span></div>
-          <div class="project-body">
-            <h3>Neo-Nova Dashboard</h3>
-            <p data-ar="منصة إدارة مشاريع للمؤسسات" data-en="Enterprise project management platform">منصة إدارة مشاريع للمؤسسات</p>
-            <a href="https://neo-nova.vercel.app" target="_blank" class="project-link" data-ar="زيارة المشروع" data-en="Visit project">زيارة المشروع ←</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-art art-2"><span class="project-badge" data-ar="منصة" data-en="Platform">منصة</span></div>
-          <div class="project-body">
-            <h3>Rover</h3>
-            <p data-ar="منصة نقل وتوصيل" data-en="Transportation &amp; delivery platform">منصة نقل وتوصيل</p>
-            <a href="https://github.com/Nader-Dev1" target="_blank" class="project-link" data-ar="عرض الكود" data-en="View code">عرض الكود ←</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-art art-3"><span class="project-badge" data-ar="نظام" data-en="System">نظام</span></div>
-          <div class="project-body">
-            <h3>Hema Job Platform</h3>
-            <p data-ar="نظام توظيف ومطابقة وظائف" data-en="Recruitment &amp; job-matching system">نظام توظيف ومطابقة وظائف</p>
-            <span class="project-link" data-ar="قريباً" data-en="Coming soon">قريباً</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-art art-4"><span class="project-badge" data-ar="سوق" data-en="Marketplace">سوق</span></div>
-          <div class="project-body">
-            <h3>Wazfny Market</h3>
-            <p data-ar="حل تجارة إلكترونية وسوق رقمي" data-en="E-commerce &amp; marketplace solution">حل تجارة إلكترونية وسوق رقمي</p>
-            <span class="project-link" data-ar="قريباً" data-en="Coming soon">قريباً</span>
-          </div>
-        </article>
-
-        <!-- duplicate set for a seamless loop -->
-        <article class="project-card" aria-hidden="true">
-          <div class="project-art art-1"><span class="project-badge">SaaS</span></div>
-          <div class="project-body">
-            <h3>Neo-Nova Dashboard</h3>
-            <p data-ar="منصة إدارة مشاريع للمؤسسات" data-en="Enterprise project management platform">منصة إدارة مشاريع للمؤسسات</p>
-            <a href="https://neo-nova.vercel.app" target="_blank" class="project-link" data-ar="زيارة المشروع" data-en="Visit project">زيارة المشروع ←</a>
-          </div>
-        </article>
-
-        <article class="project-card" aria-hidden="true">
-          <div class="project-art art-2"><span class="project-badge" data-ar="منصة" data-en="Platform">منصة</span></div>
-          <div class="project-body">
-            <h3>Rover</h3>
-            <p data-ar="منصة نقل وتوصيل" data-en="Transportation &amp; delivery platform">منصة نقل وتوصيل</p>
-            <a href="https://github.com/Nader-Dev1" target="_blank" class="project-link" data-ar="عرض الكود" data-en="View code">عرض الكود ←</a>
-          </div>
-        </article>
-
-        <article class="project-card" aria-hidden="true">
-          <div class="project-art art-3"><span class="project-badge" data-ar="نظام" data-en="System">نظام</span></div>
-          <div class="project-body">
-            <h3>Hema Job Platform</h3>
-            <p data-ar="نظام توظيف ومطابقة وظائف" data-en="Recruitment &amp; job-matching system">نظام توظيف ومطابقة وظائف</p>
-            <span class="project-link" data-ar="قريباً" data-en="Coming soon">قريباً</span>
-          </div>
-        </article>
-
-        <article class="project-card" aria-hidden="true">
-          <div class="project-art art-4"><span class="project-badge" data-ar="سوق" data-en="Marketplace">سوق</span></div>
-          <div class="project-body">
-            <h3>Wazfny Market</h3>
-            <p data-ar="حل تجارة إلكترونية وسوق رقمي" data-en="E-commerce &amp; marketplace solution">حل تجارة إلكترونية وسوق رقمي</p>
-            <span class="project-link" data-ar="قريباً" data-en="Coming soon">قريباً</span>
-          </div>
-        </article>
-      </div>
-    </div>
-    <p class="project-hint">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span data-ar="مرّر الماوس عشان توقف الحركة وتقرأ بالراحة" data-en="Hover to pause and read at your pace">مرّر الماوس عشان توقف الحركة وتقرأ بالراحة</span>
-    </p>
-  </div>
-</section>
-
-<section class="section process" id="process">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="طريقة العمل" data-en="How I work">طريقة العمل</p>
-    <h2 class="section-title" data-ar="من المعاينة للتشغيل الفعلي" data-en="From site survey to live system">من المعاينة للتشغيل الفعلي</h2>
-
-    <div class="process-grid">
-      <div class="process-step reveal">
-        <span class="process-num">01</span>
-        <h3 data-ar="معاينة ميدانية" data-en="Site survey">معاينة ميدانية</h3>
-        <p data-ar="زيارة الموقع أو مكالمة استشارة مجانية لفهم احتياجات الأمان والشبكة الحقيقية." data-en="A site visit or free consultation call to understand real security and network needs.">زيارة الموقع أو مكالمة استشارة مجانية لفهم احتياجات الأمان والشبكة الحقيقية.</p>
-      </div>
-      <div class="process-step reveal">
-        <span class="process-num">02</span>
-        <h3 data-ar="تصميم الحل" data-en="Solution design">تصميم الحل</h3>
-        <p data-ar="اختيار الأجهزة والبراند المناسب، وتصميم مخطط الشبكة والكاميرات ونقاط التحكم." data-en="Choosing the right hardware and brand, and mapping out the network, cameras, and control points.">اختيار الأجهزة والبراند المناسب، وتصميم مخطط الشبكة والكاميرات ونقاط التحكم.</p>
-      </div>
-      <div class="process-step reveal">
-        <span class="process-num">03</span>
-        <h3 data-ar="تركيب وتنفيذ" data-en="Installation &amp; build">تركيب وتنفيذ</h3>
-        <p data-ar="تركيب فعلي أو تطوير برمجي، مع تحديثات دورية بدل الاختفاء لحد التسليم." data-en="Actual installation or development, with regular updates instead of disappearing until delivery.">تركيب فعلي أو تطوير برمجي، مع تحديثات دورية بدل الاختفاء لحد التسليم.</p>
-      </div>
-      <div class="process-step reveal">
-        <span class="process-num">04</span>
-        <h3 data-ar="تسليم ودعم" data-en="Handover &amp; support">تسليم ودعم</h3>
-        <p data-ar="توثيق كامل، تدريب على الاستخدام، ودعم فني بعد التسليم." data-en="Full documentation, usage training, and post-launch technical support.">توثيق كامل، تدريب على الاستخدام، ودعم فني بعد التسليم.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section credentials">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="الشهادات والتعليم" data-en="Certifications &amp; education">الشهادات والتعليم</p>
-    <h2 class="section-title" data-ar="تعلّم مستمر" data-en="Always learning">تعلّم مستمر</h2>
-
-    <div class="credentials-grid">
-      <div class="credential-card reveal">
-        <h3>CCNA</h3>
-        <p data-ar="Cisco Certified Network Associate — قيد الإنجاز" data-en="Cisco Certified Network Associate — in progress">Cisco Certified Network Associate — قيد الإنجاز</p>
-      </div>
-      <div class="credential-card reveal">
-        <h3>ITI MERN Stack</h3>
-        <p data-ar="تطوير ويب متكامل — قيد الإنجاز" data-en="Full-stack web development — in progress">تطوير ويب متكامل — قيد الإنجاز</p>
-      </div>
-      <div class="credential-card reveal">
-        <h3 data-ar="بكالوريوس تقنية معلومات" data-en="B.Sc. Information Technology">بكالوريوس تقنية معلومات</h3>
-        <p data-ar="نظم المعلومات الإدارية — جامعة بورسعيد، ٢٠٢٢" data-en="Management Information Systems — Port Said University, 2022">نظم المعلومات الإدارية — جامعة بورسعيد، ٢٠٢٢</p>
-      </div>
-      <div class="credential-card reveal">
-        <h3 data-ar="أساسيات الواجهة الأمامية" data-en="Frontend development basics">أساسيات الواجهة الأمامية</h3>
-        <p data-ar="freeCodeCamp — ٢٠٢٤" data-en="freeCodeCamp — 2024">freeCodeCamp — ٢٠٢٤</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section testimonials">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="آراء العملاء" data-en="Client feedback">آراء العملاء</p>
-    <h2 class="section-title" data-ar="نماذج آراء — استبدلها بآراء عملائك الحقيقيين" data-en="Sample quotes — swap in your real client feedback">نماذج آراء — استبدلها بآراء عملائك الحقيقيين</h2>
-
-    <div class="testimonials-grid">
-      <div class="testimonial-card reveal">
-        <p class="t-quote" data-ar="سلّم مشروع الدرعية في الوقت، والتوثيق كان فيه كل حاجة محتاجينها للتشغيل من غيره." data-en="Delivered the Al-Diriyah project on time, and the documentation had everything our team needed to run it without him.">سلّم مشروع الدرعية في الوقت، والتوثيق كان فيه كل حاجة محتاجينها للتشغيل من غيره.</p>
-        <div class="t-author">
-          <div class="t-avatar">A</div>
-          <div><p class="t-name" data-ar="عميل — مشروع بنية تحتية" data-en="Client — infrastructure project">عميل — مشروع بنية تحتية</p></div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal">
-        <p class="t-quote" data-ar="فاهم الجانب الأمني والتقني مع بعض، مكانش محتاج أشرح له حاجة مرتين." data-en="He understood both the security and technical side — I never had to explain anything twice.">فاهم الجانب الأمني والتقني مع بعض، مكانش محتاج أشرح له حاجة مرتين.</p>
-        <div class="t-author">
-          <div class="t-avatar">M</div>
-          <div><p class="t-name" data-ar="عميل — منصة SaaS" data-en="Client — SaaS platform">عميل — منصة SaaS</p></div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal">
-        <p class="t-quote" data-ar="تواصل سريع، وأي مشكلة في الكاميرات أو الشبكة اتحلت من نفس اليوم." data-en="Fast communication, and every camera or network issue was resolved the same day.">تواصل سريع، وأي مشكلة في الكاميرات أو الشبكة اتحلت من نفس اليوم.</p>
-        <div class="t-author">
-          <div class="t-avatar">S</div>
-          <div><p class="t-name" data-ar="عميل — دعم فني" data-en="Client — technical support">عميل — دعم فني</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section faq">
-  <div class="section-inner">
-    <p class="section-eyebrow" data-ar="أسئلة شائعة" data-en="FAQ">أسئلة شائعة</p>
-    <h2 class="section-title" data-ar="أسئلة بتتكرر" data-en="Questions I get a lot">أسئلة بتتكرر</h2>
-
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q">
-          <span data-ar="بتشتغل على تركيبات وبرمجة سوا؟" data-en="Do you handle installation and development together?">بتشتغل على تركيبات وبرمجة سوا؟</span>
-          <i class="faq-arrow">＋</i>
-        </button>
-        <div class="faq-a"><p data-ar="أيوه، وده اللي بيفرقني — أقدر أركّب الكاميرات والشبكة، وأبني النظام البرمجي اللي هيديرها، بدل ما تتعامل مع فريقين منفصلين." data-en="Yes, that's what sets me apart — I can install the cameras and network, and build the software that runs them, instead of you dealing with two separate teams.">أيوه، وده اللي بيفرقني — أقدر أركّب الكاميرات والشبكة، وأبني النظام البرمجي اللي هيديرها، بدل ما تتعامل مع فريقين منفصلين.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span data-ar="بتتعاملوا مع أي براند كاميرات؟" data-en="Do you work with any camera brand?">بتتعاملوا مع أي براند كاميرات؟</span>
-          <i class="faq-arrow">＋</i>
-        </button>
-        <div class="faq-a"><p data-ar="بشتغل بشكل أساسي بـ Hikvision وDahua، وبقدر أدعم أنظمة قائمة من براندات تانية كمان." data-en="I mainly work with Hikvision and Dahua, and can also support existing systems from other brands.">بشتغل بشكل أساسي بـ Hikvision وDahua، وبقدر أدعم أنظمة قائمة من براندات تانية كمان.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span data-ar="الاستشارة فعلاً مجانية؟" data-en="Is the consultation really free?">الاستشارة فعلاً مجانية؟</span>
-          <i class="faq-arrow">＋</i>
-        </button>
-        <div class="faq-a"><p data-ar="أيوه، ١٥ دقيقة بدون أي التزام عشان نفهم المشروع قبل أي كلام عن تكلفة." data-en="Yes, 15 minutes with no obligation to understand the project before any talk of cost.">أيوه، ١٥ دقيقة بدون أي التزام عشان نفهم المشروع قبل أي كلام عن تكلفة.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span data-ar="بتقدّم دعم بعد التسليم؟" data-en="Do you offer support after delivery?">بتقدّم دعم بعد التسليم؟</span>
-          <i class="faq-arrow">＋</i>
-        </button>
-        <div class="faq-a"><p data-ar="أيوه، فترة دعم متفق عليها بعد كل تسليم، بالإضافة لتوثيق كامل لفريقك." data-en="Yes, an agreed support window after every delivery, plus full documentation for your team.">أيوه، فترة دعم متفق عليها بعد كل تسليم، بالإضافة لتوثيق كامل لفريقك.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section book" id="book">
-  <div class="section-inner book-inner">
-    <div class="book-copy reveal">
-      <p class="section-eyebrow" data-ar="لنبدأ" data-en="Let's start">لنبدأ</p>
-      <h2 class="section-title" data-ar="احجز استشارة مجانية" data-en="Book a free consultation">احجز استشارة مجانية</h2>
-      <p class="hero-sub" data-ar="١٥ دقيقة لمناقشة مشروعك الأمني أو التقني، بدون أي التزام. هترد عليك خلال يوم عمل." data-en="15 minutes to talk through your security or tech project, no strings attached. You'll hear back within one business day.">١٥ دقيقة لمناقشة مشروعك الأمني أو التقني، بدون أي التزام. هترد عليك خلال يوم عمل.</p>
-
-      <a href="https://wa.me/966568063384" target="_blank" class="whatsapp-strip">
-        <div class="wa-icon">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M17 14.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.47 0 1.45 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.48.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z" fill="currentColor"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .9.9-2.9-.2-.32A8.2 8.2 0 1 1 12 20.2Z" fill="currentColor"/></svg>
-        </div>
-        <div>
-          <p class="wa-title" data-ar="تفضّل تتكلم على واتساب؟" data-en="Prefer WhatsApp?">تفضّل تتكلم على واتساب؟</p>
-          <p class="wa-sub" data-ar="+966568063384 — رد سريع" data-en="+966568063384 — quick reply">+966568063384 — رد سريع</p>
-        </div>
-      </a>
-
-      <div class="trust-row">
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          <span data-ar="بدون أي التزام" data-en="No obligation">بدون أي التزام</span>
-        </div>
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg>
-          <span data-ar="رد خلال يوم عمل" data-en="Reply within 1 business day">رد خلال يوم عمل</span>
-        </div>
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span data-ar="توثيق كامل بعد التسليم" data-en="Full docs after delivery">توثيق كامل بعد التسليم</span>
-        </div>
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 12l1.8 1.8L15 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span data-ar="ضمان سنة على التركيب" data-en="1-year installation warranty">ضمان سنة على التركيب</span>
-        </div>
-      </div>
-    </div>
-
-    <form class="book-form reveal" id="bookForm">
-      <label>
-        <span data-ar="الاسم" data-en="Name">الاسم</span>
-        <input type="text" id="f-name" required>
-      </label>
-      <label>
-        <span data-ar="رقم الجوال" data-en="Phone number">رقم الجوال</span>
-        <input type="tel" id="f-phone" required>
-      </label>
-      <label>
-        <span data-ar="نوع الخدمة" data-en="Service type">نوع الخدمة</span>
-        <select id="f-service">
-          <option data-ar="كاميرات مراقبة CCTV" data-en="CCTV surveillance">كاميرات مراقبة CCTV</option>
-          <option data-ar="Fortinet و Cisco وربط الفروع" data-en="Fortinet, Cisco &amp; branch networks">Fortinet و Cisco وربط الفروع</option>
-          <option data-ar="تحكم دخول Access Control" data-en="Access control">تحكم دخول Access Control</option>
-          <option data-ar="إنتركم وPBX/VoIP" data-en="Intercom &amp; PBX/VoIP">إنتركم وPBX/VoIP</option>
-          <option data-ar="منزل أو مكتب ذكي" data-en="Smart home / office">منزل أو مكتب ذكي</option>
-          <option data-ar="تطوير SaaS" data-en="SaaS development">تطوير SaaS</option>
-        </select>
-      </label>
-      <label>
-        <span data-ar="تفاصيل المشروع" data-en="Project details">تفاصيل المشروع</span>
-        <textarea id="f-msg" rows="3"></textarea>
-      </label>
-      <button type="submit" class="btn btn-primary btn-block" data-ar="تأكيد الحجز" data-en="Confirm booking">تأكيد الحجز</button>
-      <p class="form-note" id="formNote" data-ar="هيتفتح واتساب برسالتك جاهزة." data-en="WhatsApp will open with your message ready to send.">هيتفتح واتساب برسالتك جاهزة.</p>
-    </form>
-  </div>
-</section>
-
-<section class="section social-section">
-  <div class="section-inner social-inner">
-    <div class="social-copy">
-      <h3 data-ar="تابعني على السوشيال ميديا" data-en="Follow along">تابعني على السوشيال ميديا</h3>
-      <p data-ar="أعمال ميدانية، لقطات من التركيبات، ونصائح شبكات وأمان بشكل دوري." data-en="Field work, install snapshots, and networking &amp; security tips, posted regularly.">أعمال ميدانية، لقطات من التركيبات، ونصائح شبكات وأمان بشكل دوري.</p>
-    </div>
-    <div class="social-row">
-      <a href="https://www.instagram.com/n2dour3a/" class="social-link" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
-      </a>
-      <a href="https://tr.ee/LsO0bu4pOE" class="social-link" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="9" r="1" fill="currentColor"/><path d="M8 12v5M12 12v5m0-3c0-1.5 1-2 2-2s2 .8 2 2.2V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </a>
-      <a href="#" class="social-link" aria-label="Snapchat">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 4c-2.6 0-4 2-4 4.4 0 1 .1 1.8 0 2.4-.2.8-1.5 1.4-2.3 1.6.3.9 1.3 1.2 2 1.4-.1.6-.3 1.1-.9 1.5.7.6 1.7.6 2.4.9.4.9 1.1 1.8 2.8 1.8s2.4-.9 2.8-1.8c.7-.3 1.7-.3 2.4-.9-.6-.4-.8-.9-.9-1.5.7-.2 1.7-.5 2-1.4-.8-.2-2.1-.8-2.3-1.6-.1-.6 0-1.4 0-2.4 0-2.4-1.4-4.4-4-4.4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="https://tr.ee/RTtjhadj3F" class="social-link" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M14 21v-7h2.5l.5-3H14V9c0-.9.3-1.5 1.7-1.5H17V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V11H8v3h2.8v7H14Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="https://wa.me/966568063384" target="_blank" class="social-link" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M17 14.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.47 0 1.45 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.48.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z" fill="currentColor"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .9.9-2.9-.2-.32A8.2 8.2 0 1 1 12 20.2Z" fill="currentColor"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<div class="activity-toast" id="activityToast">
-  <span class="activity-dot" aria-hidden="true"></span>
-  <div class="activity-copy">
-    <p data-ar="عميل من الرياض حجز استشارة مجانية" data-en="A client from Riyadh booked a free consultation">عميل من الرياض حجز استشارة مجانية</p>
-    <span data-ar="قبل 3 ساعات" data-en="3 hours ago">قبل 3 ساعات</span>
-  </div>
-  <button class="activity-close" id="activityClose" aria-label="Close">×</button>
+</div></header>
+<main><section class="hero" id="home"><div class="container hero-grid">
+<div class="hero-copy">
+<span class="eyebrow" data-ar="حلول تقنية للشركات في السعودية" data-en="ENTERPRISE TECHNOLOGY SOLUTIONS IN SAUDI ARABIA">حلول تقنية للشركات في السعودية</span><h1 data-ar="هندسة شبكات وحلول برمجية لأعمالك." data-en="Network engineering and software solutions for your business.">هندسة شبكات وحلول برمجية لأعمالك.</h1>
+<p class="hero-lead" data-ar="من سطر الأوامر إلى تشغيل المشروع: شبكات وحماية، سيرفرات وداتا سنتر، Grandstream، برمجيات وأتمتة وأنظمة مدمجة، مع فريق تنفيذ ميداني." data-en="From the command line to commissioning: networks and security, servers and data centers, Grandstream, software, automation and embedded systems with a field team.">من سطر الأوامر إلى تشغيل المشروع: شبكات وحماية، سيرفرات وداتا سنتر، Grandstream، برمجيات وأتمتة وأنظمة مدمجة، مع فريق تنفيذ ميداني.</p>
+<div class="hero-actions">
+<a href="#contact" class="button button-primary" data-ar="ناقش مشروعك ←" data-en="Discuss your project →">ناقش مشروعك ←</a><a href="#services" class="button button-outline" data-ar="استكشف الحلول" data-en="Explore solutions">استكشف الحلول</a>
 </div>
-
-<a href="https://wa.me/966568063384" target="_blank" class="fab-whatsapp" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="none"><path d="M17 14.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.47 0 1.45 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.48.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z" fill="currentColor"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .9.9-2.9-.2-.32A8.2 8.2 0 1 1 12 20.2Z" fill="currentColor"/></svg>
-</a>
-
-<footer class="footer">
-  <div class="section-inner footer-inner">
-    <div>
-      <span class="logo-mark">N<span class="logo-dot">•</span>E</span>
-      <p class="footer-note" data-ar="أنظمة أمنية، شبكات وحلول SaaS — الرياض" data-en="Security systems, networking &amp; SaaS — Riyadh">أنظمة أمنية، شبكات وحلول SaaS — الرياض</p>
-    </div>
-    <div class="footer-links">
-      <a href="https://github.com/Nader-Dev1" target="_blank">GitHub</a>
-      <a href="https://neo-nova.vercel.app" target="_blank" data-ar="بورتفوليو" data-en="Portfolio">بورتفوليو</a>
-      <a href="mailto:nder0028@gmail.com">Email</a>
-      <a href="https://wa.me/966568063384" target="_blank">WhatsApp</a>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+<div class="hero-tags">
+<span>Fortinet / Cisco CLI</span><span>Grandstream / SIP</span><span>Infrastructure / SaaS</span>
+<span>Servers / Virtualization / Backup</span>
+</div>
+</div>
+<div class="hero-visual">
+<img src="images/nader-portrait.webp" alt="نادر السيد في بيئة شبكات" loading="eager" fetchpriority="high"><div class="terminal" dir="ltr" aria-label="Illustrative command line">
+<div class="terminal-bar">
+<i></i><i></i><i></i><span>network-operations / demo</span>
+</div>
+<code><b>$</b> inspect network<br><span>firewall</span>   configured<br><span>branches</span>   connected<br><span>voice</span>     available<span class="cursor">▌</span></code>
+</div>
+<span class="visual-label" data-ar="صورة معالجة بصريًا للعرض" data-en="Illustrative edited portrait">صورة معالجة بصريًا للعرض</span>
+</div>
+</div></section>
+<div class="tech-strip"><div class="container">
+<span class="tech-intro" data-ar="تقنيات ومنصات نعمل بها · لا تشير إلى شراكة رسمية" data-en="Technologies we work with · no partnership implied">تقنيات ومنصات نعمل بها · لا تشير إلى شراكة رسمية</span><div class="tech-list">
+<span>FORTINET</span><span>CISCO</span><span>grandstream</span><span>ZKTeco</span><span>HIKVISION</span><span>n8n</span>
+</div>
+</div></div>
+<section class="section" id="services"><div class="container">
+<div class="section-heading">
+<div>
+<span class="eyebrow" data-ar="ماذا نقدّم" data-en="WHAT WE DELIVER">ماذا نقدّم</span><h2 data-ar="حلول واضحة لكل طبقة في مشروعك." data-en="Solutions for every layer of your project.">حلول واضحة لكل طبقة في مشروعك.</h2>
+</div>
+<p data-ar="من تصميم الشبكة وتهيئة الأجهزة إلى التركيب والتكامل والتسليم." data-en="From network design and configuration through installation, integration and handover.">من تصميم الشبكة وتهيئة الأجهزة إلى التركيب والتكامل والتسليم.</p>
+</div>
+<div class="services-grid">
+<article class="service-card reveal"><span class="service-index">01</span><span class="service-icon" aria-hidden="true">⌘</span><h3 data-ar="تهيئة الشبكات والـCLI" data-en="Network configuration &amp; CLI">تهيئة الشبكات والـCLI</h3>
+<p data-ar="إعداد Fortinet وCisco وVLAN وRouting والجدران النارية وربط الفروع عبر VPN، مع معالجة الأعطال وتوثيق الإعدادات." data-en="Fortinet and Cisco configuration, VLANs, routing, firewalls and site-to-site VPN, plus troubleshooting and configuration documentation.">إعداد Fortinet وCisco وVLAN وRouting والجدران النارية وربط الفروع عبر VPN، مع معالجة الأعطال وتوثيق الإعدادات.</p></article><article class="service-card reveal"><span class="service-index">02</span><span class="service-icon" aria-hidden="true">⌁</span><h3 data-ar="السوفتوير والأتمتة" data-en="Software &amp; automation">السوفتوير والأتمتة</h3>
+<p data-ar="تطوير أنظمة SaaS ولوحات تشغيل وتدفقات n8n لأتمتة المهام والتنبيهات، وفق متطلبات المشروع والتكاملات المتاحة." data-en="SaaS systems, operations dashboards and n8n workflows for tasks and alerts, shaped around each project and available integrations.">تطوير أنظمة SaaS ولوحات تشغيل وتدفقات n8n لأتمتة المهام والتنبيهات، وفق متطلبات المشروع والتكاملات المتاحة.</p></article><article class="service-card reveal"><span class="service-index">03</span><span class="service-icon" aria-hidden="true">▤</span><h3 data-ar="البنية التحتية والداتا سنتر" data-en="Infrastructure &amp; data centers">البنية التحتية والداتا سنتر</h3>
+<p data-ar="تصميم وتنفيذ الشبكات السلكية واللاسلكية، تجهيز الراك والكوابل والسويتشات ومراكز البيانات مع فريق تركيبات ميداني." data-en="Wired and wireless networks, racks, structured cabling, switches and data-center deployments with a field installation team.">تصميم وتنفيذ الشبكات السلكية واللاسلكية، تجهيز الراك والكوابل والسويتشات ومراكز البيانات مع فريق تركيبات ميداني.</p></article><article class="service-card reveal"><span class="service-index">04</span><span class="service-icon" aria-hidden="true">◉</span><h3 data-ar="Grandstream وVoIP" data-en="Grandstream &amp; VoIP">Grandstream وVoIP</h3>
+<p data-ar="برمجة UCM والهواتف والتحويلات وIVR وSIP Trunk ومسارات الوارد والصادر وربط السنترالات بين الفروع." data-en="UCM and IP phone configuration, extensions, IVR, SIP trunks, call routing and branch PBX connectivity.">برمجة UCM والهواتف والتحويلات وIVR وSIP Trunk ومسارات الوارد والصادر وربط السنترالات بين الفروع.</p></article><article class="service-card reveal"><span class="service-index">05</span><span class="service-icon" aria-hidden="true">▦</span><h3 data-ar="الحضور والأنظمة منخفضة التيار" data-en="Attendance &amp; low-current systems">الحضور والأنظمة منخفضة التيار</h3>
+<p data-ar="BioTime وZKTeco والكاميرات والإنتركم والتحكم في الدخول والشاشات التفاعلية من التركيب إلى التشغيل." data-en="BioTime, ZKTeco, CCTV, intercom, access control and interactive displays from installation to commissioning.">BioTime وZKTeco والكاميرات والإنتركم والتحكم في الدخول والشاشات التفاعلية من التركيب إلى التشغيل.</p></article><article class="service-card reveal"><span class="service-index">06</span><span class="service-icon" aria-hidden="true">◇</span><h3 data-ar="السحابة وربط المواقع" data-en="Cloud &amp; branch connectivity">السحابة وربط المواقع</h3>
+<p data-ar="وصول آمن للخدمات بين الفروع والسحابة، إعداد حلول المراقبة والإدارة عن بعد وربط الأنظمة حسب بيئة العميل." data-en="Secure access across branches and cloud services, remote monitoring and system integration suited to each environment.">وصول آمن للخدمات بين الفروع والسحابة، إعداد حلول المراقبة والإدارة عن بعد وربط الأنظمة حسب بيئة العميل.</p></article>
+<article class="service-card reveal"><span class="service-index">07</span><span class="service-icon" aria-hidden="true">▥</span><h3 data-ar="السيرفرات والأنظمة" data-en="Servers &amp; systems">السيرفرات والأنظمة</h3>
+<p data-ar="إدارة Windows Server وLinux وActive Directory وخدمات الملفات، وتركيب السيرفرات الفعلية ومراقبتها وحل أعطالها." data-en="Windows Server, Linux, Active Directory and file services, plus physical server deployment, monitoring and troubleshooting.">إدارة Windows Server وLinux وActive Directory وخدمات الملفات، وتركيب السيرفرات الفعلية ومراقبتها وحل أعطالها.</p></article><article class="service-card reveal"><span class="service-index">08</span><span class="service-icon" aria-hidden="true">◫</span><h3 data-ar="الافتراضية والتخزين" data-en="Virtualization &amp; storage">الافتراضية والتخزين</h3>
+<p data-ar="نشر وإدارة VMware وHyper-V وProxmox، وترحيل P2V، وتخطيط NAS وSAN وRAID والسعات المطلوبة." data-en="VMware, Hyper-V and Proxmox deployment, P2V migration, and NAS, SAN, RAID and capacity planning.">نشر وإدارة VMware وHyper-V وProxmox، وترحيل P2V، وتخطيط NAS وSAN وRAID والسعات المطلوبة.</p></article><article class="service-card reveal"><span class="service-index">09</span><span class="service-icon" aria-hidden="true">↺</span><h3 data-ar="النسخ الاحتياطي والتعافي" data-en="Backup &amp; recovery">النسخ الاحتياطي والتعافي</h3>
+<p data-ar="إعداد Veeam وAcronis والنسخ الآلي والمراقبة والاستعادة، مع خطط التعافي واستمرارية التشغيل المناسبة لبيئة العمل." data-en="Veeam, Acronis, automated backup, monitoring and restore workflows, with recovery and continuity planning suited to the environment.">إعداد Veeam وAcronis والنسخ الآلي والمراقبة والاستعادة، مع خطط التعافي واستمرارية التشغيل المناسبة لبيئة العمل.</p></article><article class="service-card reveal"><span class="service-index">10</span><span class="service-icon" aria-hidden="true">⌁</span><h3 data-ar="الأنظمة المدمجة" data-en="Embedded systems">الأنظمة المدمجة</h3>
+<p data-ar="تطوير وربط حلول Embedded مع الأجهزة والأنظمة الأخرى وفق متطلبات المشروع، من التجربة والتحقق إلى التكامل والتشغيل." data-en="Developing and integrating embedded solutions with devices and business systems, from prototyping and validation to deployment.">تطوير وربط حلول Embedded مع الأجهزة والأنظمة الأخرى وفق متطلبات المشروع، من التجربة والتحقق إلى التكامل والتشغيل.</p></article>
+</div>
+</div></section>
+<section class="section capabilities" id="capabilities"><div class="container">
+<div class="section-heading">
+<div>
+<span class="eyebrow" data-ar="مجالات التنفيذ" data-en="CAPABILITY AREAS">مجالات التنفيذ</span><h2 data-ar="من البنية التحتية إلى تشغيل الأنظمة." data-en="From infrastructure to day-to-day operations.">من البنية التحتية إلى تشغيل الأنظمة.</h2>
+</div>
+<p data-ar="تخصصات متكاملة للمشاريع الجديدة، والتوسع، والصيانة، وحل المشاكل المعقدة." data-en="Practical capabilities for new deployments, expansion, maintenance and complex troubleshooting.">تخصصات متكاملة للمشاريع الجديدة، والتوسع، والصيانة، وحل المشاكل المعقدة.</p>
+</div>
+<div class="capability-grid">
+<article class="capability-card reveal"><h3 data-ar="البنية التحتية والداتا سنتر" data-en="Infrastructure &amp; data centers">البنية التحتية والداتا سنتر</h3>
+<p class="capability-tech" dir="ltr">Server rooms · Racks · Patch panels · UTP · Fiber · Capacity planning</p></article><article class="capability-card reveal"><h3 data-ar="الشبكات والحماية" data-en="Networking &amp; security">الشبكات والحماية</h3>
+<p class="capability-tech" dir="ltr">LAN/WAN · VLAN · Cisco · MikroTik · pfSense · Sophos · VPN · Routing</p></article><article class="capability-card reveal"><h3 data-ar="السيرفرات والافتراضية" data-en="Servers &amp; virtualization">السيرفرات والافتراضية</h3>
+<p class="capability-tech" dir="ltr">Windows/Linux · Active Directory · VMware · Hyper-V · Proxmox · P2V</p></article><article class="capability-card reveal"><h3 data-ar="التخزين واستمرارية الأعمال" data-en="Storage &amp; continuity">التخزين واستمرارية الأعمال</h3>
+<p class="capability-tech" dir="ltr">NAS · SAN · RAID · Veeam · Acronis · Backup · Disaster Recovery</p></article><article class="capability-card reveal"><h3 data-ar="الاتصالات والسنترالات" data-en="VoIP &amp; telecommunications">الاتصالات والسنترالات</h3>
+<p class="capability-tech" dir="ltr">Grandstream · Asterisk · Issabel · Yeastar · SIP Trunk · Call Routing</p></article><article class="capability-card reveal"><h3 data-ar="الأنظمة الأمنية والتيار المنخفض" data-en="Security &amp; low-current">الأنظمة الأمنية والتيار المنخفض</h3>
+<p class="capability-tech" dir="ltr">CCTV · NVR/DVR · ZKTeco · BioTime · Access Control · Wireless APs</p></article><article class="capability-card reveal"><h3 data-ar="الدعم والتشغيل" data-en="IT operations &amp; support">الدعم والتشغيل</h3>
+<p class="capability-tech" dir="ltr">Hardware · Printers · Asset Management · Vendors · ISP · Troubleshooting</p></article><article class="capability-card reveal"><h3 data-ar="البرمجيات والأنظمة المدمجة" data-en="Software &amp; embedded">البرمجيات والأنظمة المدمجة</h3>
+<p class="capability-tech" dir="ltr">SaaS · Dashboards · APIs · n8n · Embedded Systems · Automation</p></article>
+</div>
+</div></section><section class="section proof" id="work"><div class="container proof-grid">
+<div>
+<span class="eyebrow" data-ar="تنفيذ على الأرض" data-en="REAL PROJECT WORK">تنفيذ على الأرض</span><h2 data-ar="كونفجريشن دقيق. تنفيذ ميداني. تسليم واضح." data-en="Precise configuration. Field execution. Clear handover.">كونفجريشن دقيق. تنفيذ ميداني. تسليم واضح.</h2>
+<p data-ar="أعمال الشبكات والبنية التحتية لا تنتهي بتركيب الأجهزة. نراجع الاتصال والسياسات ومسارات المكالمات، ونوثّق ما يحتاجه فريق التشغيل بعد التسليم." data-en="Network and infrastructure work goes beyond installing hardware. We verify connectivity, policies and call flows, then document what the operations team needs after handover.">أعمال الشبكات والبنية التحتية لا تنتهي بتركيب الأجهزة. نراجع الاتصال والسياسات ومسارات المكالمات، ونوثّق ما يحتاجه فريق التشغيل بعد التسليم.</p>
+<div class="proof-points">
+<span data-ar="تقييم المتطلبات" data-en="Requirements review">تقييم المتطلبات</span><span data-ar="التصميم والإعداد" data-en="Design &amp; configuration">التصميم والإعداد</span><span data-ar="الاختبار والتوثيق" data-en="Testing &amp; documentation">الاختبار والتوثيق</span>
+</div>
+<a href="#gallery" class="text-link" data-ar="شاهد صور الأعمال ←" data-en="View project photography →">شاهد صور الأعمال ←</a>
+</div>
+<div class="proof-image">
+<img src="images/rack-cable-management.webp" alt="Network rack and cabling from actual work" loading="lazy"><span data-ar="صور من الأعمال الفعلية" data-en="Photographs from actual work">صور من الأعمال الفعلية</span>
+</div>
+</div></section>
+<section class="section automation" id="automation"><div class="container automation-grid">
+<div>
+<span class="eyebrow" data-ar="NETWORK AUTOMATION" data-en="NETWORK AUTOMATION">NETWORK AUTOMATION</span><h2 data-ar="خلّي التنبيه يتحوّل إلى إجراء." data-en="Turn an alert into an action.">خلّي التنبيه يتحوّل إلى إجراء.</h2>
+<p data-ar="نماذج أتمتة باستخدام n8n لربط المراقبة بالتنبيهات والتذاكر والتقارير. نحدد التكاملات القابلة للتنفيذ حسب أدوات العميل وصلاحياتها." data-en="n8n workflows can link monitoring with alerts, tickets and reports. Feasible integrations depend on your tools and access permissions.">نماذج أتمتة باستخدام n8n لربط المراقبة بالتنبيهات والتذاكر والتقارير. نحدد التكاملات القابلة للتنفيذ حسب أدوات العميل وصلاحياتها.</p>
+<span class="demo-note" data-ar="الفلو التالي مثال توضيحي وليس تكاملًا منفذًا لعميل" data-en="The flow below is illustrative, not a completed client integration">الفلو التالي مثال توضيحي وليس تكاملًا منفذًا لعميل</span>
+</div>
+<div class="flow" aria-label="Illustrative n8n workflow">
+<div class="flow-top">
+<strong>n8n / Network workflow</strong><span>● ● ●</span>
+</div>
+<div class="flow-nodes">
+<div>
+<small>01</small><b data-ar="حدث في الشبكة" data-en="Network event">حدث في الشبكة</b>
+</div>
+<em>←</em><div>
+<small>02</small><b>n8n / verify</b>
+</div>
+<em>←</em><div>
+<small>03</small><b data-ar="تنبيه أو تذكرة" data-en="Alert or ticket">تنبيه أو تذكرة</b>
+</div>
+</div>
+<div class="flow-status">workflow · example · configurable</div>
+</div>
+</div></section>
+<section class="section gallery-section" id="gallery"><div class="container">
+<div class="section-heading">
+<div>
+<span class="eyebrow" data-ar="معرض الأعمال" data-en="PROJECT PHOTOGRAPHY">معرض الأعمال</span><h2 data-ar="مشاهد من التنفيذ الحقيقي." data-en="Real work, documented.">مشاهد من التنفيذ الحقيقي.</h2>
+</div>
+<p data-ar="صور من مشاريع الشبكات والداتا سنتر والاتصالات والتيار المنخفض، مرتبة حسب نوع النظام." data-en="Project photos across networks, data centers, communications and low-current systems, organized by category.">صور من مشاريع الشبكات والداتا سنتر والاتصالات والتيار المنخفض، مرتبة حسب نوع النظام.</p>
+</div>
+<div class="filters">
+<button class="gallery-filter active" data-filter="all" aria-pressed="true" data-ar="الكل" data-en="All">الكل</button><button class="gallery-filter" data-filter="network" aria-pressed="false" data-ar="الشبكات" data-en="Networks">الشبكات</button><button class="gallery-filter" data-filter="data" aria-pressed="false" data-ar="الداتا سنتر" data-en="Data centers">الداتا سنتر</button><button class="gallery-filter" data-filter="surveillance" aria-pressed="false" data-ar="الكاميرات" data-en="Surveillance">الكاميرات</button><button class="gallery-filter" data-filter="elv" aria-pressed="false" data-ar="التيار المنخفض والاتصالات" data-en="ELV &amp; voice">التيار المنخفض والاتصالات</button><button class="gallery-filter" data-filter="onsite" aria-pressed="false" data-ar="التركيب الميداني" data-en="On-site">التركيب الميداني</button>
+</div>
+<div class="gallery-grid">
+<button class="gallery-item" type="button" data-category="network" data-image="images/rack-fortiswitch-close.jpg" data-title-ar="تفاصيل سويتشات Fortinet" data-title-en="Fortinet switches close-up" aria-label="تفاصيل سويتشات Fortinet"><img src="images/rack-fortiswitch-close.jpg" alt="تفاصيل سويتشات Fortinet" loading="lazy"><span data-ar="تفاصيل سويتشات Fortinet" data-en="Fortinet switches close-up">تفاصيل سويتشات Fortinet</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/rack-cable-management.webp" data-title-ar="تنظيم الكابلات داخل الراك" data-title-en="Rack cable management" aria-label="تنظيم الكابلات داخل الراك"><img src="images/rack-cable-management.webp" alt="تنظيم الكابلات داخل الراك" loading="lazy"><span data-ar="تنظيم الكابلات داخل الراك" data-en="Rack cable management">تنظيم الكابلات داخل الراك</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/rack-corning-wifi.jpg" data-title-ar="راك شبكات وسويتشات" data-title-en="Network rack and switches" aria-label="راك شبكات وسويتشات"><img src="images/rack-corning-wifi.jpg" alt="راك شبكات وسويتشات" loading="lazy"><span data-ar="راك شبكات وسويتشات" data-en="Network rack and switches">راك شبكات وسويتشات</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/attendance-terminal.webp" data-title-ar="جهاز حضور وانصراف بالبصمة" data-title-en="Biometric attendance device" aria-label="جهاز حضور وانصراف بالبصمة"><img src="images/attendance-terminal.webp" alt="جهاز حضور وانصراف بالبصمة" loading="lazy"><span data-ar="جهاز حضور وانصراف بالبصمة" data-en="Biometric attendance device">جهاز حضور وانصراف بالبصمة</span></button><button class="gallery-item" type="button" data-category="surveillance" data-image="images/outdoor-camera.webp" data-title-ar="كاميرا مراقبة خارجية" data-title-en="Outdoor surveillance camera" aria-label="كاميرا مراقبة خارجية"><img src="images/outdoor-camera.webp" alt="كاميرا مراقبة خارجية" loading="lazy"><span data-ar="كاميرا مراقبة خارجية" data-en="Outdoor surveillance camera">كاميرا مراقبة خارجية</span></button><button class="gallery-item" type="button" data-category="data" data-image="images/server-rack-asm.jpg" data-title-ar="راك سيرفرات وتجهيزات" data-title-en="Server rack infrastructure" aria-label="راك سيرفرات وتجهيزات"><img src="images/server-rack-asm.jpg" alt="راك سيرفرات وتجهيزات" loading="lazy"><span data-ar="راك سيرفرات وتجهيزات" data-en="Server rack infrastructure">راك سيرفرات وتجهيزات</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/interactive-display.webp" data-title-ar="شاشة تفاعلية وتجهيزات العرض" data-title-en="Interactive display setup" aria-label="شاشة تفاعلية وتجهيزات العرض"><img src="images/interactive-display.webp" alt="شاشة تفاعلية وتجهيزات العرض" loading="lazy"><span data-ar="شاشة تفاعلية وتجهيزات العرض" data-en="Interactive display setup">شاشة تفاعلية وتجهيزات العرض</span></button><button class="gallery-item" type="button" data-category="data" data-image="images/infrastructure-rack.webp" data-title-ar="تجهيز راك البنية التحتية" data-title-en="Infrastructure rack installation" aria-label="تجهيز راك البنية التحتية"><img src="images/infrastructure-rack.webp" alt="تجهيز راك البنية التحتية" loading="lazy"><span data-ar="تجهيز راك البنية التحتية" data-en="Infrastructure rack installation">تجهيز راك البنية التحتية</span></button><button class="gallery-item" type="button" data-category="surveillance" data-image="images/surveillance-rack.webp" data-title-ar="راك أنظمة المراقبة" data-title-en="Surveillance equipment rack" aria-label="راك أنظمة المراقبة"><img src="images/surveillance-rack.webp" alt="راك أنظمة المراقبة" loading="lazy"><span data-ar="راك أنظمة المراقبة" data-en="Surveillance equipment rack">راك أنظمة المراقبة</span></button><button class="gallery-item" type="button" data-category="data" data-image="images/data-center-cabinets.webp" data-title-ar="راك وخزائن مركز بيانات" data-title-en="Data center rack and cabinets" aria-label="راك وخزائن مركز بيانات"><img src="images/data-center-cabinets.webp" alt="راك وخزائن مركز بيانات" loading="lazy"><span data-ar="راك وخزائن مركز بيانات" data-en="Data center rack and cabinets">راك وخزائن مركز بيانات</span></button><button class="gallery-item" type="button" data-category="data" data-image="images/server-cabinet-installation.webp" data-title-ar="تجهيز خزانة سيرفرات" data-title-en="Server cabinet installation" aria-label="تجهيز خزانة سيرفرات"><img src="images/server-cabinet-installation.webp" alt="تجهيز خزانة سيرفرات" loading="lazy"><span data-ar="تجهيز خزانة سيرفرات" data-en="Server cabinet installation">تجهيز خزانة سيرفرات</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/technology-systems-display.webp" data-title-ar="عرض تجهيزات الأنظمة التقنية" data-title-en="Technology systems display" aria-label="عرض تجهيزات الأنظمة التقنية"><img src="images/technology-systems-display.webp" alt="عرض تجهيزات الأنظمة التقنية" loading="lazy"><span data-ar="عرض تجهيزات الأنظمة التقنية" data-en="Technology systems display">عرض تجهيزات الأنظمة التقنية</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/network-cabinet-equipment.webp" data-title-ar="معدات شبكات داخل راك" data-title-en="Network equipment in cabinet" aria-label="معدات شبكات داخل راك"><img src="images/network-cabinet-equipment.webp" alt="معدات شبكات داخل راك" loading="lazy"><span data-ar="معدات شبكات داخل راك" data-en="Network equipment in cabinet">معدات شبكات داخل راك</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/structured-rack-cabling.webp" data-title-ar="توصيلات راك وشبكة داخلية" data-title-en="Structured rack cabling" aria-label="توصيلات راك وشبكة داخلية"><img src="images/structured-rack-cabling.webp" alt="توصيلات راك وشبكة داخلية" loading="lazy"><span data-ar="توصيلات راك وشبكة داخلية" data-en="Structured rack cabling">توصيلات راك وشبكة داخلية</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/information-display.webp" data-title-ar="شاشة نظام عرض معلومات" data-title-en="Information display system" aria-label="شاشة نظام عرض معلومات"><img src="images/information-display.webp" alt="شاشة نظام عرض معلومات" loading="lazy"><span data-ar="شاشة نظام عرض معلومات" data-en="Information display system">شاشة نظام عرض معلومات</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/entrance-intercom.webp" data-title-ar="وحدة إنتركم عند المدخل" data-title-en="Entrance intercom panel" aria-label="وحدة إنتركم عند المدخل"><img src="images/entrance-intercom.webp" alt="وحدة إنتركم عند المدخل" loading="lazy"><span data-ar="وحدة إنتركم عند المدخل" data-en="Entrance intercom panel">وحدة إنتركم عند المدخل</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/switch-cabling.webp" data-title-ar="سويتشات وتوصيلات الشبكة" data-title-en="Network switches and cabling" aria-label="سويتشات وتوصيلات الشبكة"><img src="images/switch-cabling.webp" alt="سويتشات وتوصيلات الشبكة" loading="lazy"><span data-ar="سويتشات وتوصيلات الشبكة" data-en="Network switches and cabling">سويتشات وتوصيلات الشبكة</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/switch-rack.webp" data-title-ar="راك شبكات وسويتشات" data-title-en="Network rack and switches" aria-label="راك شبكات وسويتشات"><img src="images/switch-rack.webp" alt="راك شبكات وسويتشات" loading="lazy"><span data-ar="راك شبكات وسويتشات" data-en="Network rack and switches">راك شبكات وسويتشات</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/onsite-installation.webp" data-title-ar="تركيب وتجهيز الشبكة بالموقع" data-title-en="On-site network installation" aria-label="تركيب وتجهيز الشبكة بالموقع"><img src="images/onsite-installation.webp" alt="تركيب وتجهيز الشبكة بالموقع" loading="lazy"><span data-ar="تركيب وتجهيز الشبكة بالموقع" data-en="On-site network installation">تركيب وتجهيز الشبكة بالموقع</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/low-current-unit.webp" data-title-ar="وحدة أنظمة تيار منخفض" data-title-en="Low-current system unit" aria-label="وحدة أنظمة تيار منخفض"><img src="images/low-current-unit.webp" alt="وحدة أنظمة تيار منخفض" loading="lazy"><span data-ar="وحدة أنظمة تيار منخفض" data-en="Low-current system unit">وحدة أنظمة تيار منخفض</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/security-system-point.webp" data-title-ar="تجهيز نقطة نظام أمني" data-title-en="Security system point installation" aria-label="تجهيز نقطة نظام أمني"><img src="images/security-system-point.webp" alt="تجهيز نقطة نظام أمني" loading="lazy"><span data-ar="تجهيز نقطة نظام أمني" data-en="Security system point installation">تجهيز نقطة نظام أمني</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/fortigate-fortiswitch-box.jpg" data-title-ar="معدات FortiGate وFortiSwitch" data-title-en="FortiGate and FortiSwitch hardware" aria-label="معدات FortiGate وFortiSwitch"><img src="images/fortigate-fortiswitch-box.jpg" alt="معدات FortiGate وFortiSwitch" loading="lazy"><span data-ar="معدات FortiGate وFortiSwitch" data-en="FortiGate and FortiSwitch hardware">معدات FortiGate وFortiSwitch</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/rack-front-complete.jpg" data-title-ar="راك شبكة مكتمل" data-title-en="Completed network cabinet" aria-label="راك شبكة مكتمل"><img src="images/rack-front-complete.jpg" alt="راك شبكة مكتمل" loading="lazy"><span data-ar="راك شبكة مكتمل" data-en="Completed network cabinet">راك شبكة مكتمل</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/planet-switch-cable-mgmt.jpg" data-title-ar="تنظيم كابلات الشبكة" data-title-en="Network cable management" aria-label="تنظيم كابلات الشبكة"><img src="images/planet-switch-cable-mgmt.jpg" alt="تنظيم كابلات الشبكة" loading="lazy"><span data-ar="تنظيم كابلات الشبكة" data-en="Network cable management">تنظيم كابلات الشبكة</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/avayo-patch-panels.jpg" data-title-ar="Patch Panels وتوصيلات الشبكة" data-title-en="Patch panels and network cabling" aria-label="Patch Panels وتوصيلات الشبكة"><img src="images/avayo-patch-panels.jpg" alt="Patch Panels وتوصيلات الشبكة" loading="lazy"><span data-ar="Patch Panels وتوصيلات الشبكة" data-en="Patch panels and network cabling">Patch Panels وتوصيلات الشبكة</span></button><button class="gallery-item" type="button" data-category="network" data-image="images/rack-ceiling-mount.jpg" data-title-ar="تركيب راك جداري" data-title-en="Wall-mounted rack installation" aria-label="تركيب راك جداري"><img src="images/rack-ceiling-mount.jpg" alt="تركيب راك جداري" loading="lazy"><span data-ar="تركيب راك جداري" data-en="Wall-mounted rack installation">تركيب راك جداري</span></button><button class="gallery-item" type="button" data-category="software" data-image="images/laptop-dashboard-rack.jpg" data-title-ar="لوحة متابعة مع راك الشبكة" data-title-en="Monitoring dashboard with network rack" aria-label="لوحة متابعة مع راك الشبكة"><img src="images/laptop-dashboard-rack.jpg" alt="لوحة متابعة مع راك الشبكة" loading="lazy"><span data-ar="لوحة متابعة مع راك الشبكة" data-en="Monitoring dashboard with network rack">لوحة متابعة مع راك الشبكة</span></button><button class="gallery-item" type="button" data-category="surveillance" data-image="images/rack-full-hikvision.jpg" data-title-ar="راك كاميرات المراقبة" data-title-en="Surveillance system rack" aria-label="راك كاميرات المراقبة"><img src="images/rack-full-hikvision.jpg" alt="راك كاميرات المراقبة" loading="lazy"><span data-ar="راك كاميرات المراقبة" data-en="Surveillance system rack">راك كاميرات المراقبة</span></button><button class="gallery-item" type="button" data-category="surveillance" data-image="images/hikvision-rack-stc5g.jpg" data-title-ar="تجهيزات نظام المراقبة" data-title-en="Surveillance system equipment" aria-label="تجهيزات نظام المراقبة"><img src="images/hikvision-rack-stc5g.jpg" alt="تجهيزات نظام المراقبة" loading="lazy"><span data-ar="تجهيزات نظام المراقبة" data-en="Surveillance system equipment">تجهيزات نظام المراقبة</span></button><button class="gallery-item" type="button" data-category="surveillance" data-image="images/dahua-nvr-ruijie-switch.jpg" data-title-ar="مسجل NVR وسويتش شبكة" data-title-en="NVR recorder and network switch" aria-label="مسجل NVR وسويتش شبكة"><img src="images/dahua-nvr-ruijie-switch.jpg" alt="مسجل NVR وسويتش شبكة" loading="lazy"><span data-ar="مسجل NVR وسويتش شبكة" data-en="NVR recorder and network switch">مسجل NVR وسويتش شبكة</span></button><button class="gallery-item" type="button" data-category="surveillance" data-image="images/cctv-lockbox-wall.jpg" data-title-ar="تجهيز كاميرات بالموقع" data-title-en="On-site camera equipment" aria-label="تجهيز كاميرات بالموقع"><img src="images/cctv-lockbox-wall.jpg" alt="تجهيز كاميرات بالموقع" loading="lazy"><span data-ar="تجهيز كاميرات بالموقع" data-en="On-site camera equipment">تجهيز كاميرات بالموقع</span></button><button class="gallery-item" type="button" data-category="surveillance" data-image="images/cctv-monitor-wall.jpg" data-title-ar="شاشات عرض كاميرات المراقبة" data-title-en="Surveillance monitor wall" aria-label="شاشات عرض كاميرات المراقبة"><img src="images/cctv-monitor-wall.jpg" alt="شاشات عرض كاميرات المراقبة" loading="lazy"><span data-ar="شاشات عرض كاميرات المراقبة" data-en="Surveillance monitor wall">شاشات عرض كاميرات المراقبة</span></button><button class="gallery-item" type="button" data-category="surveillance" data-image="images/cctv-villa-gate.jpg" data-title-ar="كاميرا مراقبة خارجية" data-title-en="Outdoor surveillance camera" aria-label="كاميرا مراقبة خارجية"><img src="images/cctv-villa-gate.jpg" alt="كاميرا مراقبة خارجية" loading="lazy"><span data-ar="كاميرا مراقبة خارجية" data-en="Outdoor surveillance camera">كاميرا مراقبة خارجية</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/avayo-pbx-rack.jpg" data-title-ar="سنترال واتصالات داخل راك" data-title-en="PBX and telecom rack" aria-label="سنترال واتصالات داخل راك"><img src="images/avayo-pbx-rack.jpg" alt="سنترال واتصالات داخل راك" loading="lazy"><span data-ar="سنترال واتصالات داخل راك" data-en="PBX and telecom rack">سنترال واتصالات داخل راك</span></button><button class="gallery-item" type="button" data-category="elv" data-image="images/yealink-ip-phone.jpg" data-title-ar="هاتف IP للسنترال" data-title-en="IP phone system" aria-label="هاتف IP للسنترال"><img src="images/yealink-ip-phone.jpg" alt="هاتف IP للسنترال" loading="lazy"><span data-ar="هاتف IP للسنترال" data-en="IP phone system">هاتف IP للسنترال</span></button>
+</div>
+</div></section>
+<section class="section contact" id="contact"><div class="container contact-grid">
+<div>
+<span class="eyebrow" data-ar="لنبدأ من المتطلبات" data-en="LET’S TALK SCOPE">لنبدأ من المتطلبات</span><h2 data-ar="عندك مشروع يحتاج تصميمًا أو تنفيذًا؟" data-en="Have a project to design or deploy?">عندك مشروع يحتاج تصميمًا أو تنفيذًا؟</h2>
+<p data-ar="شارك نوع الأنظمة وعدد المواقع والتحدي الحالي، ونحدد الخطوة التالية ونطاق العمل المناسب." data-en="Share your systems, site count and current challenge so we can define the next step and scope.">شارك نوع الأنظمة وعدد المواقع والتحدي الحالي، ونحدد الخطوة التالية ونطاق العمل المناسب.</p>
+</div>
+<form id="contactForm">
+<label><span data-ar="الاسم" data-en="Name">الاسم</span><input name="name" required autocomplete="name"></label><label><span data-ar="الجوال" data-en="Phone">الجوال</span><input name="phone" required inputmode="tel" autocomplete="tel"></label><label><span data-ar="وصف مختصر للمشروع" data-en="Project brief">وصف مختصر للمشروع</span><textarea name="brief" rows="3" required></textarea></label><button class="button button-primary" type="submit" data-ar="أرسل الطلب عبر واتساب ←" data-en="Send via WhatsApp →">أرسل الطلب عبر واتساب ←</button>
+</form>
+</div></section></main><footer><div class="container footer-inner">
+<span data-ar="نادر السيد · هندسة الشبكات والحلول التقنية · الرياض" data-en="Nader Elsayed · Network engineering &amp; technology · Riyadh">نادر السيد · هندسة الشبكات والحلول التقنية · الرياض</span><a href="https://wa.me/966568063384" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+</div></footer><dialog id="lightbox"><button class="lightbox-close" type="button" aria-label="Close">×</button><img alt=""><p></p></dialog><script src="script.js"></script>
 </body>
 </html>
