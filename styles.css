@@ -147,3 +147,11 @@ dialog { background: #142e3a; color: var(--ink); }
 .gallery-item img[src$="security-system-point.webp"] { object-position: center 31%; }
 @media (max-width: 820px) { .case-grid { grid-template-columns: 1fr; } }
 @media (max-width: 550px) { .case-photo { height: 230px; } .case-body { padding: 22px; } }
+.case-card { display: flex; flex-direction: column; }
+.case-body { flex: 1; }
+.case-logo { display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, #284451, #102632 70%); }
+.case-logo img { width: min(76%, 450px); height: auto; max-height: 78%; object-fit: contain; box-shadow: 0 16px 35px #06151e60; }
+.case-card:hover .case-logo img { transform: none; }
+.case-detail { margin: 23px 0 0; padding: 10px; display: grid; grid-template-columns: 125px minmax(0, 1fr); align-items: center; gap: 14px; border: 1px solid var(--line); border-radius: 9px; background: #102631; }
+.case-detail img { width: 125px; height: 94px; border-radius: 5px; object-fit: cover; object-position: center 30%; }
+.case-detail figcaption { color: #ccdddd; font-size: 12px; line-height: 1.65; }
