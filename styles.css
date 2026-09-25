@@ -190,3 +190,52 @@ html { scroll-padding-top: 92px; }
   .capability-card { min-height: 145px; grid-template-columns: 52px minmax(0, 1fr); }
   .capability-card h3 { font-size: 18px; }
 }
+
+/* Responsive refinements for phones, tablets, and narrow laptop windows. */
+@media (max-width: 820px) {
+  .nav { gap: 12px; }
+  .brand { min-width: 0; }
+  .nav-actions { flex: none; gap: 6px; }
+  .hero-grid, .hero-copy, .hero-visual, .service-card, .capability-card,
+  .section-heading, .proof-grid, .automation-grid, .contact-grid { min-width: 0; }
+  .hero-tags span { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+  .flow { min-width: 0; overflow: hidden; }
+  .flow-nodes { gap: 4px; padding: 28px 0; }
+  .flow-nodes div { min-width: 0; }
+  .flow-nodes b { overflow-wrap: anywhere; }
+  .proof-image { max-width: 100%; }
+}
+@media (max-width: 550px) {
+  .container { width: calc(100% - 32px); }
+  .nav { gap: 8px; }
+  .brand { gap: 8px; }
+  .nav-actions { gap: 2px; }
+  .lang-button { padding: 7px 4px; }
+  .menu-toggle { padding: 5px 8px; }
+  .hero-copy { padding-top: 48px; }
+  .hero h1 { font-size: clamp(32px, 9.5vw, 39px); line-height: 1.32; }
+  .hero-visual { height: min(108vw, 410px); }
+  .terminal { min-width: 0; width: min(210px, 72%); inset-inline-end: 0; bottom: 12px; }
+  .terminal code { padding: 10px 12px; font-size: 10px; }
+  .section { padding: 56px 0; }
+  .section-heading h2, .proof h2, .automation h2, .contact h2 { font-size: clamp(25px, 8vw, 32px); }
+  .section-heading > p, .proof p, .automation p, .contact p { font-size: 14px; }
+  .service-card { padding: 22px; min-height: 0; }
+  .service-card p { font-size: 14px; line-height: 1.8; }
+  .flow { padding: 14px; }
+  .flow-nodes div { min-height: 85px; padding: 10px 4px; }
+  .flow-nodes b { font-size: 11px; }
+  form { min-width: 0; padding: 20px; }
+}
+@media (max-width: 360px) {
+  .brand small { display: none; }
+  .nav { height: 66px; }
+  .nav-links { top: 66px; }
+  .hero-tags span { font-size: 10px; }
+  .terminal { width: 185px; }
+  .capability-card { grid-template-columns: 43px minmax(0, 1fr); }
+  .capability-card h3 { font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal.in { animation: none; }
+}
